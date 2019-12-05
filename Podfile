@@ -21,7 +21,7 @@ shared_pods
 target 'Segment-Facebook' do
   
   project 'Integrations/Segment-Facebook/Segment-Facebook.xcodeproj'
-  pod 'FBSDKCoreKit', '~> 5.11'
+  
  
  target 'Segment-FacebookTests' do
   testing_pods
@@ -31,6 +31,8 @@ end
 target 'Simple Integrations Example' do
   
   project 'Example Projects/Simple Integrations Example/Simple Integrations Example.xcodeproj'
+
+  pod 'Segment-Facebook-App-Events', :path => './'
   
   target 'Simple Integrations ExampleTests' do
   testing_pods
