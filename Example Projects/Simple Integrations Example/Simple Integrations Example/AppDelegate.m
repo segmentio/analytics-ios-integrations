@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Analytics/SEGAnalytics.h>
+#import <Segment-Facebook/SEGFacebookAppEventsIntegrationFactory.h>
 
 @interface AppDelegate ()
 

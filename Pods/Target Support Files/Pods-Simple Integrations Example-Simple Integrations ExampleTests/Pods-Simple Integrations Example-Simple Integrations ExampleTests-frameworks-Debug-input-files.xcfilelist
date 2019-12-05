@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Simple Integrations Example-Simple Integrations ExampleTests/Pods-Simple Integrations Example-Simple Integrations ExampleTests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Analytics/Analytics.framework
+${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
 ${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework
 ${BUILT_PRODUCTS_DIR}/Specta/Specta.framework
