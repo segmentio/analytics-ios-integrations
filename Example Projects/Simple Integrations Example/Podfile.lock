@@ -7,14 +7,19 @@ PODS:
   - FBSDKCoreKit/Basics (5.13.1)
   - FBSDKCoreKit/Core (5.13.1):
     - FBSDKCoreKit/Basics
+  - Mixpanel (3.5.0)
   - Segment-Facebook-App-Events (1.0.4):
     - Analytics (~> 3.0)
     - FBSDKCoreKit (~> 5.0)
+  - Segment-Mixpanel (1.5.0):
+    - Analytics (~> 3.0)
+    - Mixpanel (~> 3.5)
   - Specta (1.0.7)
 
 DEPENDENCIES:
   - Expecta
   - Segment-Facebook-App-Events (from `../../Integrations/analytics-ios-integration-facebook-app-events`)
+  - Segment-Mixpanel (from `../../Integrations/analytics-ios-integration-mixpanel`)
   - Specta
 
 SPEC REPOS:
@@ -22,19 +27,24 @@ SPEC REPOS:
     - Analytics
     - Expecta
     - FBSDKCoreKit
+    - Mixpanel
     - Specta
 
 EXTERNAL SOURCES:
   Segment-Facebook-App-Events:
     :path: "../../Integrations/analytics-ios-integration-facebook-app-events"
+  Segment-Mixpanel:
+    :path: "../../Integrations/analytics-ios-integration-mixpanel"
 
 SPEC CHECKSUMS:
   Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Mixpanel: 399997670f5452de026449f9e9ecd52eccbb9ff7
   Segment-Facebook-App-Events: fc089c58a163dbfb817a8a65b2e5023afd919843
+  Segment-Mixpanel: 2cba240ce309198b1af509df3f0defa7d545d770
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: fca958077eed15b55edfd1be4a345eff84fd884e
+PODFILE CHECKSUM: 9dbdb1fd4d919c221468504ec987c5ed952dfdd4
 
 COCOAPODS: 1.8.4

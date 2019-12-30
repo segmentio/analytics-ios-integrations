@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Analytics/SEGAnalytics.h>
 #import <SEGFacebookAppEventsIntegrationFactory.h>
+#import <SEGMixpanelIntegrationFactory.h>
 
 @interface AppDelegate ()
 
@@ -26,6 +27,7 @@
     
     // Add any of your bundled integrations.
     [config use:[SEGFacebookAppEventsIntegrationFactory instance]];
+    [config use:[SEGMixpanelIntegrationFactory instance]];
     
     [SEGAnalytics setupWithConfiguration:config];
     
