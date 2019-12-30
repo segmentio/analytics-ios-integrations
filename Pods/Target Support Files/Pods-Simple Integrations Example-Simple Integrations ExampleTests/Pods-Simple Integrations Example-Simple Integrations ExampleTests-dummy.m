@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests : NSObject
-@end
-@implementation PodsDummy_Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests
-@end

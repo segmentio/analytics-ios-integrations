@@ -1,6 +1,0 @@
-framework module Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests {
-  umbrella header "Pods-Simple Integrations Example-Simple Integrations ExampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

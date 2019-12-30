@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '9.0'
+use_frameworks!
+
+def testing_pods
+  pod 'Expecta'
+  pod 'Specta'
+end
+
+target 'Simple Integrations Example' do
+  
+  pod 'Segment-Facebook', :path => '../../Integrations/Segment-Facebook'
+ 
+ target 'Simple Integrations ExampleTests' do
+  testing_pods
+  end
+end
+
+
+
+
+

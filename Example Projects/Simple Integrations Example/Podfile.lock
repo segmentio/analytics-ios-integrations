@@ -7,12 +7,14 @@ PODS:
   - FBSDKCoreKit/Basics (5.13.1)
   - FBSDKCoreKit/Core (5.13.1):
     - FBSDKCoreKit/Basics
+  - Segment-Facebook (1.0.4):
+    - Analytics (~> 3.0)
+    - FBSDKCoreKit (~> 5.0)
   - Specta (1.0.7)
 
 DEPENDENCIES:
-  - Analytics (~> 3.0)
   - Expecta
-  - FBSDKCoreKit (~> 5.0)
+  - Segment-Facebook (from `../../Integrations/Segment-Facebook`)
   - Specta
 
 SPEC REPOS:
@@ -22,12 +24,17 @@ SPEC REPOS:
     - FBSDKCoreKit
     - Specta
 
+EXTERNAL SOURCES:
+  Segment-Facebook:
+    :path: "../../Integrations/Segment-Facebook"
+
 SPEC CHECKSUMS:
   Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Segment-Facebook: ac5819ec42b7612492e4340a7762c6c0c1f0385a
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 14de2ce4ed229c2025505951526f2120196a9a49
+PODFILE CHECKSUM: 0a83f85f18b5cb43b013249ae72577c189a8e452
 
 COCOAPODS: 1.8.4

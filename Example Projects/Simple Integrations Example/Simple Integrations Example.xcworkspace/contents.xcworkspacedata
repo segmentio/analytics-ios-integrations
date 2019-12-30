@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Integrations/Segment-Facebook/Segment-Facebook.xcodeproj">
+      location = "group:Simple Integrations Example.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
