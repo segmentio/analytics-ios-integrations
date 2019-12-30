@@ -7,114 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E0229B5423BAAF5400CB0EB0 /* Segment_MixPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0229B4A23BAAF5300CB0EB0 /* Segment_MixPanel.framework */; };
-		E0229B5923BAAF5400CB0EB0 /* Segment_MixPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0229B5823BAAF5400CB0EB0 /* Segment_MixPanelTests.m */; };
-		E0229B5B23BAAF5400CB0EB0 /* Segment_MixPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = E0229B4D23BAAF5300CB0EB0 /* Segment_MixPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0229B6A23BAAFC200CB0EB0 /* SEGMixpanelIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = E0229B6623BAAFC200CB0EB0 /* SEGMixpanelIntegration.h */; };
-		E0229B6B23BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E0229B6723BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.h */; };
-		E0229B6C23BAAFC200CB0EB0 /* SEGMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = E0229B6823BAAFC200CB0EB0 /* SEGMixpanelIntegration.m */; };
-		E0229B6D23BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E0229B6923BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.m */; };
-		E0229B7023BAAFDC00CB0EB0 /* SEGPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E0229B6F23BAAFDC00CB0EB0 /* SEGPayloadBuilder.m */; };
+		E050C83F23BAB74A0001A31A /* Segment_Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */; };
+		E050C84423BAB74A0001A31A /* Segment_MixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */; };
+		E050C84623BAB74A0001A31A /* Segment_Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C83823BAB74A0001A31A /* Segment_Mixpanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E050C85523BAB77B0001A31A /* SEGMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85123BAB77B0001A31A /* SEGMixpanelIntegration.m */; };
+		E050C85623BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85223BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m */; };
+		E050C85723BAB77B0001A31A /* SEGMixpanelIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C85323BAB77B0001A31A /* SEGMixpanelIntegration.h */; };
+		E050C85823BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C85423BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h */; };
+		E050C85B23BAB7890001A31A /* SEGPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E0229B5523BAAF5400CB0EB0 /* PBXContainerItemProxy */ = {
+		E050C84023BAB74A0001A31A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E0229B4123BAAF5300CB0EB0 /* Project object */;
+			containerPortal = E050C82C23BAB74A0001A31A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E0229B4923BAAF5300CB0EB0;
-			remoteInfo = "Segment-MixPanel";
+			remoteGlobalIDString = E050C83423BAB74A0001A31A;
+			remoteInfo = "Segment-Mixpanel";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E0229B4A23BAAF5300CB0EB0 /* Segment_MixPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Segment_MixPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0229B4D23BAAF5300CB0EB0 /* Segment_MixPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segment_MixPanel.h; sourceTree = "<group>"; };
-		E0229B4E23BAAF5300CB0EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0229B5323BAAF5400CB0EB0 /* Segment-MixPanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segment-MixPanelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0229B5823BAAF5400CB0EB0 /* Segment_MixPanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Segment_MixPanelTests.m; sourceTree = "<group>"; };
-		E0229B5A23BAAF5400CB0EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0229B6623BAAFC200CB0EB0 /* SEGMixpanelIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGMixpanelIntegration.h; sourceTree = "<group>"; };
-		E0229B6723BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGMixpanelIntegrationFactory.h; sourceTree = "<group>"; };
-		E0229B6823BAAFC200CB0EB0 /* SEGMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGMixpanelIntegration.m; sourceTree = "<group>"; };
-		E0229B6923BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGMixpanelIntegrationFactory.m; sourceTree = "<group>"; };
-		E0229B6E23BAAFDC00CB0EB0 /* SEGPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGPayloadBuilder.h; sourceTree = "<group>"; };
-		E0229B6F23BAAFDC00CB0EB0 /* SEGPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGPayloadBuilder.m; sourceTree = "<group>"; };
+		E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Segment_Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E050C83823BAB74A0001A31A /* Segment_Mixpanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segment_Mixpanel.h; sourceTree = "<group>"; };
+		E050C83923BAB74A0001A31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E050C83E23BAB74A0001A31A /* Segment-MixpanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segment-MixpanelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Segment_MixpanelTests.m; sourceTree = "<group>"; };
+		E050C84523BAB74A0001A31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E050C85123BAB77B0001A31A /* SEGMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGMixpanelIntegration.m; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegration.m"; sourceTree = "<group>"; };
+		E050C85223BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGMixpanelIntegrationFactory.m; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegrationFactory.m"; sourceTree = "<group>"; };
+		E050C85323BAB77B0001A31A /* SEGMixpanelIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGMixpanelIntegration.h; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegration.h"; sourceTree = "<group>"; };
+		E050C85423BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGMixpanelIntegrationFactory.h; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegrationFactory.h"; sourceTree = "<group>"; };
+		E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGPayloadBuilder.m; path = "../../../analytics-ios-integration-mixpanel/Segment-MixPanelTests/SEGPayloadBuilder.m"; sourceTree = "<group>"; };
+		E050C85A23BAB7890001A31A /* SEGPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGPayloadBuilder.h; path = "../../../analytics-ios-integration-mixpanel/Segment-MixPanelTests/SEGPayloadBuilder.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E0229B4723BAAF5300CB0EB0 /* Frameworks */ = {
+		E050C83223BAB74A0001A31A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0229B5023BAAF5400CB0EB0 /* Frameworks */ = {
+		E050C83B23BAB74A0001A31A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0229B5423BAAF5400CB0EB0 /* Segment_MixPanel.framework in Frameworks */,
+				E050C83F23BAB74A0001A31A /* Segment_Mixpanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E0229B4023BAAF5300CB0EB0 = {
+		E050C82B23BAB74A0001A31A = {
 			isa = PBXGroup;
 			children = (
-				E0229B6423BAAF6100CB0EB0 /* Source */,
-				E0229B5723BAAF5400CB0EB0 /* Segment-MixPanelTests */,
-				E0229B4B23BAAF5300CB0EB0 /* Products */,
+				E050C84F23BAB75B0001A31A /* Source */,
+				E050C84223BAB74A0001A31A /* Segment-MixpanelTests */,
+				E050C83623BAB74A0001A31A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E0229B4B23BAAF5300CB0EB0 /* Products */ = {
+		E050C83623BAB74A0001A31A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0229B4A23BAAF5300CB0EB0 /* Segment_MixPanel.framework */,
-				E0229B5323BAAF5400CB0EB0 /* Segment-MixPanelTests.xctest */,
+				E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */,
+				E050C83E23BAB74A0001A31A /* Segment-MixpanelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0229B4C23BAAF5300CB0EB0 /* Supporting Files */ = {
+		E050C83723BAB74A0001A31A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E0229B4D23BAAF5300CB0EB0 /* Segment_MixPanel.h */,
-				E0229B4E23BAAF5300CB0EB0 /* Info.plist */,
+				E050C83823BAB74A0001A31A /* Segment_Mixpanel.h */,
+				E050C83923BAB74A0001A31A /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E0229B5723BAAF5400CB0EB0 /* Segment-MixPanelTests */ = {
+		E050C84223BAB74A0001A31A /* Segment-MixpanelTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0229B6E23BAAFDC00CB0EB0 /* SEGPayloadBuilder.h */,
-				E0229B6F23BAAFDC00CB0EB0 /* SEGPayloadBuilder.m */,
-				E0229B5823BAAF5400CB0EB0 /* Segment_MixPanelTests.m */,
-				E0229B5A23BAAF5400CB0EB0 /* Info.plist */,
+				E050C85A23BAB7890001A31A /* SEGPayloadBuilder.h */,
+				E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */,
+				E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */,
+				E050C84523BAB74A0001A31A /* Info.plist */,
 			);
-			path = "Segment-MixPanelTests";
+			path = "Segment-MixpanelTests";
 			sourceTree = "<group>";
 		};
-		E0229B6423BAAF6100CB0EB0 /* Source */ = {
+		E050C84F23BAB75B0001A31A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E041327023BAB09100A4A915 /* Core */,
-				E0229B4C23BAAF5300CB0EB0 /* Supporting Files */,
+				E050C85023BAB7610001A31A /* Core */,
+				E050C83723BAB74A0001A31A /* Supporting Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		E041327023BAB09100A4A915 /* Core */ = {
+		E050C85023BAB7610001A31A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E0229B6623BAAFC200CB0EB0 /* SEGMixpanelIntegration.h */,
-				E0229B6823BAAFC200CB0EB0 /* SEGMixpanelIntegration.m */,
-				E0229B6723BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.h */,
-				E0229B6923BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.m */,
+				E050C85323BAB77B0001A31A /* SEGMixpanelIntegration.h */,
+				E050C85123BAB77B0001A31A /* SEGMixpanelIntegration.m */,
+				E050C85423BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h */,
+				E050C85223BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -122,99 +122,99 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E0229B4523BAAF5300CB0EB0 /* Headers */ = {
+		E050C83023BAB74A0001A31A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0229B5B23BAAF5400CB0EB0 /* Segment_MixPanel.h in Headers */,
-				E0229B6B23BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.h in Headers */,
-				E0229B6A23BAAFC200CB0EB0 /* SEGMixpanelIntegration.h in Headers */,
+				E050C84623BAB74A0001A31A /* Segment_Mixpanel.h in Headers */,
+				E050C85823BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h in Headers */,
+				E050C85723BAB77B0001A31A /* SEGMixpanelIntegration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E0229B4923BAAF5300CB0EB0 /* Segment-MixPanel */ = {
+		E050C83423BAB74A0001A31A /* Segment-Mixpanel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0229B5E23BAAF5400CB0EB0 /* Build configuration list for PBXNativeTarget "Segment-MixPanel" */;
+			buildConfigurationList = E050C84923BAB74A0001A31A /* Build configuration list for PBXNativeTarget "Segment-Mixpanel" */;
 			buildPhases = (
-				E0229B4523BAAF5300CB0EB0 /* Headers */,
-				E0229B4623BAAF5300CB0EB0 /* Sources */,
-				E0229B4723BAAF5300CB0EB0 /* Frameworks */,
-				E0229B4823BAAF5300CB0EB0 /* Resources */,
+				E050C83023BAB74A0001A31A /* Headers */,
+				E050C83123BAB74A0001A31A /* Sources */,
+				E050C83223BAB74A0001A31A /* Frameworks */,
+				E050C83323BAB74A0001A31A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Segment-MixPanel";
-			productName = "Segment-MixPanel";
-			productReference = E0229B4A23BAAF5300CB0EB0 /* Segment_MixPanel.framework */;
+			name = "Segment-Mixpanel";
+			productName = "Segment-Mixpanel";
+			productReference = E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E0229B5223BAAF5400CB0EB0 /* Segment-MixPanelTests */ = {
+		E050C83D23BAB74A0001A31A /* Segment-MixpanelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0229B6123BAAF5400CB0EB0 /* Build configuration list for PBXNativeTarget "Segment-MixPanelTests" */;
+			buildConfigurationList = E050C84C23BAB74A0001A31A /* Build configuration list for PBXNativeTarget "Segment-MixpanelTests" */;
 			buildPhases = (
-				E0229B4F23BAAF5400CB0EB0 /* Sources */,
-				E0229B5023BAAF5400CB0EB0 /* Frameworks */,
-				E0229B5123BAAF5400CB0EB0 /* Resources */,
+				E050C83A23BAB74A0001A31A /* Sources */,
+				E050C83B23BAB74A0001A31A /* Frameworks */,
+				E050C83C23BAB74A0001A31A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E0229B5623BAAF5400CB0EB0 /* PBXTargetDependency */,
+				E050C84123BAB74A0001A31A /* PBXTargetDependency */,
 			);
-			name = "Segment-MixPanelTests";
-			productName = "Segment-MixPanelTests";
-			productReference = E0229B5323BAAF5400CB0EB0 /* Segment-MixPanelTests.xctest */;
+			name = "Segment-MixpanelTests";
+			productName = "Segment-MixpanelTests";
+			productReference = E050C83E23BAB74A0001A31A /* Segment-MixpanelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E0229B4123BAAF5300CB0EB0 /* Project object */ = {
+		E050C82C23BAB74A0001A31A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Segment;
 				TargetAttributes = {
-					E0229B4923BAAF5300CB0EB0 = {
+					E050C83423BAB74A0001A31A = {
 						CreatedOnToolsVersion = 10.3;
 					};
-					E0229B5223BAAF5400CB0EB0 = {
+					E050C83D23BAB74A0001A31A = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = E0229B4423BAAF5300CB0EB0 /* Build configuration list for PBXProject "Segment-MixPanel" */;
+			buildConfigurationList = E050C82F23BAB74A0001A31A /* Build configuration list for PBXProject "Segment-Mixpanel" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E0229B4023BAAF5300CB0EB0;
-			productRefGroup = E0229B4B23BAAF5300CB0EB0 /* Products */;
+			mainGroup = E050C82B23BAB74A0001A31A;
+			productRefGroup = E050C83623BAB74A0001A31A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0229B4923BAAF5300CB0EB0 /* Segment-MixPanel */,
-				E0229B5223BAAF5400CB0EB0 /* Segment-MixPanelTests */,
+				E050C83423BAB74A0001A31A /* Segment-Mixpanel */,
+				E050C83D23BAB74A0001A31A /* Segment-MixpanelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E0229B4823BAAF5300CB0EB0 /* Resources */ = {
+		E050C83323BAB74A0001A31A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0229B5123BAAF5400CB0EB0 /* Resources */ = {
+		E050C83C23BAB74A0001A31A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,36 +224,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E0229B4623BAAF5300CB0EB0 /* Sources */ = {
+		E050C83123BAB74A0001A31A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0229B6C23BAAFC200CB0EB0 /* SEGMixpanelIntegration.m in Sources */,
-				E0229B6D23BAAFC200CB0EB0 /* SEGMixpanelIntegrationFactory.m in Sources */,
+				E050C85523BAB77B0001A31A /* SEGMixpanelIntegration.m in Sources */,
+				E050C85623BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0229B4F23BAAF5400CB0EB0 /* Sources */ = {
+		E050C83A23BAB74A0001A31A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0229B7023BAAFDC00CB0EB0 /* SEGPayloadBuilder.m in Sources */,
-				E0229B5923BAAF5400CB0EB0 /* Segment_MixPanelTests.m in Sources */,
+				E050C85B23BAB7890001A31A /* SEGPayloadBuilder.m in Sources */,
+				E050C84423BAB74A0001A31A /* Segment_MixpanelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E0229B5623BAAF5400CB0EB0 /* PBXTargetDependency */ = {
+		E050C84123BAB74A0001A31A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E0229B4923BAAF5300CB0EB0 /* Segment-MixPanel */;
-			targetProxy = E0229B5523BAAF5400CB0EB0 /* PBXContainerItemProxy */;
+			target = E050C83423BAB74A0001A31A /* Segment-Mixpanel */;
+			targetProxy = E050C84023BAB74A0001A31A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E0229B5C23BAAF5400CB0EB0 /* Debug */ = {
+		E050C84723BAB74A0001A31A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		E0229B5D23BAAF5400CB0EB0 /* Release */ = {
+		E050C84823BAB74A0001A31A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +371,7 @@
 			};
 			name = Release;
 		};
-		E0229B5F23BAAF5400CB0EB0 /* Debug */ = {
+		E050C84A23BAB74A0001A31A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -380,21 +380,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Segment-MixPanel/Info.plist";
+				INFOPLIST_FILE = "Segment-Mixpanel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-MixPanel";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-Mixpanel";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E0229B6023BAAF5400CB0EB0 /* Release */ = {
+		E050C84B23BAB74A0001A31A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -403,47 +403,47 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Segment-MixPanel/Info.plist";
+				INFOPLIST_FILE = "Segment-Mixpanel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-MixPanel";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-Mixpanel";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		E0229B6223BAAF5400CB0EB0 /* Debug */ = {
+		E050C84D23BAB74A0001A31A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Segment-MixPanelTests/Info.plist";
+				INFOPLIST_FILE = "Segment-MixpanelTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-MixPanelTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-MixpanelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E0229B6323BAAF5400CB0EB0 /* Release */ = {
+		E050C84E23BAB74A0001A31A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Segment-MixPanelTests/Info.plist";
+				INFOPLIST_FILE = "Segment-MixpanelTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-MixPanelTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Segment.Segment-MixpanelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,34 +452,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E0229B4423BAAF5300CB0EB0 /* Build configuration list for PBXProject "Segment-MixPanel" */ = {
+		E050C82F23BAB74A0001A31A /* Build configuration list for PBXProject "Segment-Mixpanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0229B5C23BAAF5400CB0EB0 /* Debug */,
-				E0229B5D23BAAF5400CB0EB0 /* Release */,
+				E050C84723BAB74A0001A31A /* Debug */,
+				E050C84823BAB74A0001A31A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0229B5E23BAAF5400CB0EB0 /* Build configuration list for PBXNativeTarget "Segment-MixPanel" */ = {
+		E050C84923BAB74A0001A31A /* Build configuration list for PBXNativeTarget "Segment-Mixpanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0229B5F23BAAF5400CB0EB0 /* Debug */,
-				E0229B6023BAAF5400CB0EB0 /* Release */,
+				E050C84A23BAB74A0001A31A /* Debug */,
+				E050C84B23BAB74A0001A31A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0229B6123BAAF5400CB0EB0 /* Build configuration list for PBXNativeTarget "Segment-MixPanelTests" */ = {
+		E050C84C23BAB74A0001A31A /* Build configuration list for PBXNativeTarget "Segment-MixpanelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0229B6223BAAF5400CB0EB0 /* Debug */,
-				E0229B6323BAAF5400CB0EB0 /* Release */,
+				E050C84D23BAB74A0001A31A /* Debug */,
+				E050C84E23BAB74A0001A31A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E0229B4123BAAF5300CB0EB0 /* Project object */;
+	rootObject = E050C82C23BAB74A0001A31A /* Project object */;
 }
