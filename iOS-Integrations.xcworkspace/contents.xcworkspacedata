@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Integrations/Segment-Facebook/Segment-Facebook.xcodeproj">
+      location = "group:Integrations/analytics-ios-integration-facebook-app-events/Segment-Facebook.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

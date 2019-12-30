@@ -10,7 +10,7 @@ end
 
 target 'Simple Integrations Example' do
   
-  pod 'Segment-Facebook', :path => '../../Integrations/Segment-Facebook'
+  pod 'Segment-Facebook-App-Events', :path => '../../Integrations/analytics-ios-integration-facebook-app-events'
  
  target 'Simple Integrations ExampleTests' do
   testing_pods
