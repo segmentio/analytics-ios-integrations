@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194AABCDE3D5FF9D447F7066 /* Pods_Segment_Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088EB593C0BDACDB0F72DF24 /* Pods_Segment_Mixpanel.framework */; };
+		AF353B5DED9C13B52CA78E57 /* Pods_Segment_Mixpanel_Segment_MixpanelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2335E53C8AA36E9F31B6816A /* Pods_Segment_Mixpanel_Segment_MixpanelTests.framework */; };
 		E050C83F23BAB74A0001A31A /* Segment_Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */; };
 		E050C84423BAB74A0001A31A /* Segment_MixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */; };
 		E050C84623BAB74A0001A31A /* Segment_Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C83823BAB74A0001A31A /* Segment_Mixpanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E050C85523BAB77B0001A31A /* SEGMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85123BAB77B0001A31A /* SEGMixpanelIntegration.m */; };
-		E050C85623BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85223BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m */; };
-		E050C85723BAB77B0001A31A /* SEGMixpanelIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C85323BAB77B0001A31A /* SEGMixpanelIntegration.h */; };
-		E050C85823BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C85423BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h */; };
 		E050C85B23BAB7890001A31A /* SEGPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */; };
+		E050C86D23BABA040001A31A /* SEGMixpanelIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C86923BABA040001A31A /* SEGMixpanelIntegrationFactory.h */; };
+		E050C86E23BABA040001A31A /* SEGMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C86A23BABA040001A31A /* SEGMixpanelIntegration.m */; };
+		E050C86F23BABA040001A31A /* SEGMixpanelIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C86B23BABA040001A31A /* SEGMixpanelIntegration.h */; };
+		E050C87023BABA040001A31A /* SEGMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C86C23BABA040001A31A /* SEGMixpanelIntegrationFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +30,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088EB593C0BDACDB0F72DF24 /* Pods_Segment_Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Segment_Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2335E53C8AA36E9F31B6816A /* Pods_Segment_Mixpanel_Segment_MixpanelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Segment_Mixpanel_Segment_MixpanelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6A269B394FFFCCE2F4BD70 /* Pods-Segment-Mixpanel-Segment-MixpanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Mixpanel-Segment-MixpanelTests.debug.xcconfig"; path = "Target Support Files/Pods-Segment-Mixpanel-Segment-MixpanelTests/Pods-Segment-Mixpanel-Segment-MixpanelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AECABBE4787F7A9A89EAFAB5 /* Pods-Segment-Mixpanel-Segment-MixpanelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Mixpanel-Segment-MixpanelTests.release.xcconfig"; path = "Target Support Files/Pods-Segment-Mixpanel-Segment-MixpanelTests/Pods-Segment-Mixpanel-Segment-MixpanelTests.release.xcconfig"; sourceTree = "<group>"; };
 		E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Segment_Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E050C83823BAB74A0001A31A /* Segment_Mixpanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segment_Mixpanel.h; sourceTree = "<group>"; };
 		E050C83923BAB74A0001A31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E050C83E23BAB74A0001A31A /* Segment-MixpanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segment-MixpanelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Segment_MixpanelTests.m; sourceTree = "<group>"; };
 		E050C84523BAB74A0001A31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E050C85123BAB77B0001A31A /* SEGMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGMixpanelIntegration.m; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegration.m"; sourceTree = "<group>"; };
-		E050C85223BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGMixpanelIntegrationFactory.m; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegrationFactory.m"; sourceTree = "<group>"; };
-		E050C85323BAB77B0001A31A /* SEGMixpanelIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGMixpanelIntegration.h; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegration.h"; sourceTree = "<group>"; };
-		E050C85423BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGMixpanelIntegrationFactory.h; path = "../../../../analytics-ios-integration-mixpanel/Source/Core/SEGMixpanelIntegrationFactory.h"; sourceTree = "<group>"; };
 		E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGPayloadBuilder.m; path = "../../../analytics-ios-integration-mixpanel/Segment-MixPanelTests/SEGPayloadBuilder.m"; sourceTree = "<group>"; };
 		E050C85A23BAB7890001A31A /* SEGPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGPayloadBuilder.h; path = "../../../analytics-ios-integration-mixpanel/Segment-MixPanelTests/SEGPayloadBuilder.h"; sourceTree = "<group>"; };
+		E050C86923BABA040001A31A /* SEGMixpanelIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGMixpanelIntegrationFactory.h; sourceTree = "<group>"; };
+		E050C86A23BABA040001A31A /* SEGMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGMixpanelIntegration.m; sourceTree = "<group>"; };
+		E050C86B23BABA040001A31A /* SEGMixpanelIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGMixpanelIntegration.h; sourceTree = "<group>"; };
+		E050C86C23BABA040001A31A /* SEGMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGMixpanelIntegrationFactory.m; sourceTree = "<group>"; };
+		E3F91D6204F36A7D2B52A77B /* Pods-Segment-Mixpanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Mixpanel.debug.xcconfig"; path = "Target Support Files/Pods-Segment-Mixpanel/Pods-Segment-Mixpanel.debug.xcconfig"; sourceTree = "<group>"; };
+		F74BA91BC789741F7C04F240 /* Pods-Segment-Mixpanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Mixpanel.release.xcconfig"; path = "Target Support Files/Pods-Segment-Mixpanel/Pods-Segment-Mixpanel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194AABCDE3D5FF9D447F7066 /* Pods_Segment_Mixpanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,18 +64,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				E050C83F23BAB74A0001A31A /* Segment_Mixpanel.framework in Frameworks */,
+				AF353B5DED9C13B52CA78E57 /* Pods_Segment_Mixpanel_Segment_MixpanelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3784251B7910E3333BD98CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				088EB593C0BDACDB0F72DF24 /* Pods_Segment_Mixpanel.framework */,
+				2335E53C8AA36E9F31B6816A /* Pods_Segment_Mixpanel_Segment_MixpanelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51A2674B5F870378ABE46E03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3F91D6204F36A7D2B52A77B /* Pods-Segment-Mixpanel.debug.xcconfig */,
+				F74BA91BC789741F7C04F240 /* Pods-Segment-Mixpanel.release.xcconfig */,
+				5E6A269B394FFFCCE2F4BD70 /* Pods-Segment-Mixpanel-Segment-MixpanelTests.debug.xcconfig */,
+				AECABBE4787F7A9A89EAFAB5 /* Pods-Segment-Mixpanel-Segment-MixpanelTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		E050C82B23BAB74A0001A31A = {
 			isa = PBXGroup;
 			children = (
 				E050C84F23BAB75B0001A31A /* Source */,
 				E050C84223BAB74A0001A31A /* Segment-MixpanelTests */,
 				E050C83623BAB74A0001A31A /* Products */,
+				51A2674B5F870378ABE46E03 /* Pods */,
+				3784251B7910E3333BD98CA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,19 +135,19 @@
 		E050C84F23BAB75B0001A31A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E050C85023BAB7610001A31A /* Core */,
+				E050C87223BABA420001A31A /* Core */,
 				E050C83723BAB74A0001A31A /* Supporting Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		E050C85023BAB7610001A31A /* Core */ = {
+		E050C87223BABA420001A31A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E050C85323BAB77B0001A31A /* SEGMixpanelIntegration.h */,
-				E050C85123BAB77B0001A31A /* SEGMixpanelIntegration.m */,
-				E050C85423BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h */,
-				E050C85223BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m */,
+				E050C86B23BABA040001A31A /* SEGMixpanelIntegration.h */,
+				E050C86A23BABA040001A31A /* SEGMixpanelIntegration.m */,
+				E050C86923BABA040001A31A /* SEGMixpanelIntegrationFactory.h */,
+				E050C86C23BABA040001A31A /* SEGMixpanelIntegrationFactory.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -126,9 +159,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E050C86D23BABA040001A31A /* SEGMixpanelIntegrationFactory.h in Headers */,
 				E050C84623BAB74A0001A31A /* Segment_Mixpanel.h in Headers */,
-				E050C85823BAB77B0001A31A /* SEGMixpanelIntegrationFactory.h in Headers */,
-				E050C85723BAB77B0001A31A /* SEGMixpanelIntegration.h in Headers */,
+				E050C86F23BABA040001A31A /* SEGMixpanelIntegration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E050C84923BAB74A0001A31A /* Build configuration list for PBXNativeTarget "Segment-Mixpanel" */;
 			buildPhases = (
+				959BAB554C3B7FE0C23711C3 /* [CP] Check Pods Manifest.lock */,
 				E050C83023BAB74A0001A31A /* Headers */,
 				E050C83123BAB74A0001A31A /* Sources */,
 				E050C83223BAB74A0001A31A /* Frameworks */,
@@ -157,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E050C84C23BAB74A0001A31A /* Build configuration list for PBXNativeTarget "Segment-MixpanelTests" */;
 			buildPhases = (
+				94870D4C0460C54931D1A63D /* [CP] Check Pods Manifest.lock */,
 				E050C83A23BAB74A0001A31A /* Sources */,
 				E050C83B23BAB74A0001A31A /* Frameworks */,
 				E050C83C23BAB74A0001A31A /* Resources */,
+				CF10B4B7F76200B8D21DF47F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,13 +259,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94870D4C0460C54931D1A63D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Segment-Mixpanel-Segment-MixpanelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959BAB554C3B7FE0C23711C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Segment-Mixpanel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF10B4B7F76200B8D21DF47F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Segment-Mixpanel-Segment-MixpanelTests/Pods-Segment-Mixpanel-Segment-MixpanelTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Segment-Mixpanel-Segment-MixpanelTests/Pods-Segment-Mixpanel-Segment-MixpanelTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Segment-Mixpanel-Segment-MixpanelTests/Pods-Segment-Mixpanel-Segment-MixpanelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E050C83123BAB74A0001A31A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E050C85523BAB77B0001A31A /* SEGMixpanelIntegration.m in Sources */,
-				E050C85623BAB77B0001A31A /* SEGMixpanelIntegrationFactory.m in Sources */,
+				E050C86E23BABA040001A31A /* SEGMixpanelIntegration.m in Sources */,
+				E050C87023BABA040001A31A /* SEGMixpanelIntegrationFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +473,7 @@
 		};
 		E050C84A23BAB74A0001A31A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F91D6204F36A7D2B52A77B /* Pods-Segment-Mixpanel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -380,7 +481,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Segment-Mixpanel/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +497,7 @@
 		};
 		E050C84B23BAB74A0001A31A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74BA91BC789741F7C04F240 /* Pods-Segment-Mixpanel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -403,7 +505,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Segment-Mixpanel/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,6 +521,7 @@
 		};
 		E050C84D23BAB74A0001A31A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6A269B394FFFCCE2F4BD70 /* Pods-Segment-Mixpanel-Segment-MixpanelTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Segment-MixpanelTests/Info.plist";
@@ -435,6 +538,7 @@
 		};
 		E050C84E23BAB74A0001A31A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECABBE4787F7A9A89EAFAB5 /* Pods-Segment-Mixpanel-Segment-MixpanelTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Segment-MixpanelTests/Info.plist";
