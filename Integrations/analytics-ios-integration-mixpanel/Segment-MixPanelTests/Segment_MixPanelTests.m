@@ -8,8 +8,14 @@
 
 // https://github.com/Specta/Specta
 
+@import Specta;
+@import Expecta;
+@import OCMockito;
+
+#import "SEGMixpanelIntegration.h"
 #import "SEGPayloadBuilder.h"
 #import <MixpanelGroup.h>
+
 
 SpecBegin(InitialSpecs)
 
