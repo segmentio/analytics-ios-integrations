@@ -7,6 +7,7 @@ PODS:
   - FBSDKCoreKit/Basics (5.13.1)
   - FBSDKCoreKit/Core (5.13.1):
     - FBSDKCoreKit/Basics
+  - Mixpanel (3.5.0)
   - OCHamcrest (5.4.0)
   - OCMockito (3.0.2):
     - OCHamcrest (~> 5.1)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - Analytics (~> 3.0)
   - Expecta
   - FBSDKCoreKit (~> 5.0)
+  - Mixpanel (~> 3.5)
   - OCMockito (~> 3.0)
   - Specta
 
@@ -24,6 +26,7 @@ SPEC REPOS:
     - Analytics
     - Expecta
     - FBSDKCoreKit
+    - Mixpanel
     - OCHamcrest
     - OCMockito
     - Specta
@@ -32,10 +35,11 @@ SPEC CHECKSUMS:
   Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Mixpanel: 399997670f5452de026449f9e9ecd52eccbb9ff7
   OCHamcrest: 5c1d441c5a82fb18ac17c2aeb52ec1a99edb971b
   OCMockito: 2cb6c2267cbc76537be56281cd47cdb5a7c27541
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 1ab93f457c6d525b8a11916f20cb142e28cc2fe8
+PODFILE CHECKSUM: 59a7ae39c6a6c0ceb7f2553bca17517a43adfd5b
 
 COCOAPODS: 1.8.4
