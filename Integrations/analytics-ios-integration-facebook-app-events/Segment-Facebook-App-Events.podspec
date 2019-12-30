@@ -1,7 +1,7 @@
 
 
 Pod::Spec.new do |s|
-  s.name             = "Segment-Facebook"
+  s.name             = "Segment-Facebook-App-Events"
   s.version          = "1.0.4"
   s.summary          = "Facebook App Events Integration for Segment's analytics-ios library."
 

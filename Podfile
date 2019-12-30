@@ -3,7 +3,7 @@
 platform :ios, '9.0'
 
 workspace 'iOS-Integrations.xcworkspace'
-project 'Integrations/Segment-Facebook/Segment-Facebook.xcodeproj'
+project 'Integrations/analytics-ios-integration-facebook-app-events/Segment-Facebook.xcodeproj'
 use_frameworks!
 
 def shared_pods
@@ -19,7 +19,7 @@ shared_pods
 
 target 'Segment-Facebook' do
   
-  project 'Integrations/Segment-Facebook/Segment-Facebook.xcodeproj'
+  project 'Integrations/analytics-ios-integration-facebook-app-events/Segment-Facebook.xcodeproj'
   pod 'FBSDKCoreKit', '~> 5.0'
  
  target 'Segment-FacebookTests' do
