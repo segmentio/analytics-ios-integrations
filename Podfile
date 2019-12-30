@@ -4,6 +4,8 @@ platform :ios, '9.0'
 
 workspace 'iOS-Integrations.xcworkspace'
 project 'Integrations/analytics-ios-integration-facebook-app-events/Segment-Facebook.xcodeproj'
+project 'Integrations/analytics-ios-integration-mixpanel/Segment-Mixpanel.xcodeproj'
+
 use_frameworks!
 
 def shared_pods
@@ -27,7 +29,15 @@ target 'Segment-Facebook' do
   end
 end
 
-
+target 'Segment-Mixpanel' do
+  
+  project 'Integrations/analytics-ios-integration-mixpanel/Segment-Mixpanel.xcodeproj'
+  
+  target 'Segment-MixpanelTests' do
+    pod 'OCMockito', '~> 3.0'
+    testing_pods
+  end
+end
 
 
 
