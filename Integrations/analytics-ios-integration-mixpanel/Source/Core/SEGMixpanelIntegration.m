@@ -1,6 +1,6 @@
 #import "SEGMixpanelIntegration.h"
 #import <Analytics/SEGAnalyticsUtils.h>
-#import <MixpanelGroup.h>
+#import "MixpanelGroup.h"
 
 
 @implementation SEGMixpanelIntegration
