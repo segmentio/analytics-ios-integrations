@@ -1,3 +1,5 @@
+
+
 Pod::Spec.new do |s|
   s.name             = "Segment-Facebook"
   s.version          = "1.0.4"
@@ -13,13 +15,15 @@ Pod::Spec.new do |s|
   s.homepage         = "http://segment.com/"
   s.license          =  { :type => 'MIT' }
   s.author           = { "Segment" => "friends@segment.com" }
-  s.source           = { :git => "https://github.com/OllaAshour/analytics-ios-integrations/tree/DAND-16-Setup-ios-monorepo", :tag => s.version.to_s }
+ 
   s.social_media_url = 'https://twitter.com/segment'
+  s.source         = { :git => '' }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Source/**/*'
+  s.exclude_files = 'Source/Supporting Files'
 
   s.dependency 'Analytics', '~> 3.0'
   s.dependency 'FBSDKCoreKit', '~> 5.0'

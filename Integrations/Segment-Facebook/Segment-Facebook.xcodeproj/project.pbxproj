@@ -92,10 +92,30 @@
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
+		E0229B3E23BA386D00CB0EB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E072C5612386105D00F90DC6 /* Segment_Facebook.h */,
+				E072C5622386105D00F90DC6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0229B3F23BA388100CB0EB0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E072C579238610A300F90DC6 /* SEGFacebookAppEventsIntegration.h */,
+				E072C57B238610A300F90DC6 /* SEGFacebookAppEventsIntegration.m */,
+				E072C57A238610A300F90DC6 /* SEGFacebookAppEventsIntegrationFactory.h */,
+				E072C57C238610A300F90DC6 /* SEGFacebookAppEventsIntegrationFactory.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		E072C5542386105D00F90DC6 = {
 			isa = PBXGroup;
 			children = (
-				E072C5602386105D00F90DC6 /* Segment-Facebook */,
+				E072C5782386108700F90DC6 /* Source */,
 				E072C56B2386105D00F90DC6 /* Segment-FacebookTests */,
 				E072C55F2386105D00F90DC6 /* Products */,
 				E31F433A916588511ED378CB /* Frameworks */,
@@ -112,16 +132,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E072C5602386105D00F90DC6 /* Segment-Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				E072C5782386108700F90DC6 /* Source */,
-				E072C5612386105D00F90DC6 /* Segment_Facebook.h */,
-				E072C5622386105D00F90DC6 /* Info.plist */,
-			);
-			path = "Segment-Facebook";
-			sourceTree = "<group>";
-		};
 		E072C56B2386105D00F90DC6 /* Segment-FacebookTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,10 +144,8 @@
 		E072C5782386108700F90DC6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E072C579238610A300F90DC6 /* SEGFacebookAppEventsIntegration.h */,
-				E072C57B238610A300F90DC6 /* SEGFacebookAppEventsIntegration.m */,
-				E072C57A238610A300F90DC6 /* SEGFacebookAppEventsIntegrationFactory.h */,
-				E072C57C238610A300F90DC6 /* SEGFacebookAppEventsIntegrationFactory.m */,
+				E0229B3F23BA388100CB0EB0 /* Core */,
+				E0229B3E23BA386D00CB0EB0 /* Supporting Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -479,7 +487,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Segment-Facebook/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,7 +548,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Segment-Facebook/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
