@@ -1,6 +1,0 @@
-framework module Pods_Segment_Facebook {
-  umbrella header "Pods-Segment-Facebook-umbrella.h"
-
-  export *
-  module * { export * }
-}
