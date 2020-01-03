@@ -1,0 +1,7 @@
+# To update, change version below, run bundle install, test,
+# commit Gemfile and Gemfile.lock.
+source 'https://rubygems.org'
+
+gem 'cocoapods', "1.8.4"
+gem 'danger-gitlab'
+gem 'xcpretty'
