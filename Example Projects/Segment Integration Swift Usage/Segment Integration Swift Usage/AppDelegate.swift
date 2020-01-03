@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Analytics
+import Segment_Facebook_App_Events
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        SEGAnalytics.debug(true)
+        
+        let config = SEGAnalyticsConfiguration(writeKey: "gnjyuUpq7mZYtLM76mwltoiZcDsFpnfY")
+        
+        // Add any of your bundled integrations.
+        config.use(SEGFacebookAppEventsIntegrationFactory.instance())
+        
+        SEGAnalytics.setup(with: config)
+        SEGAnalytics.shared()?.identify("segment-fake-tester", traits: ["email":"tool@fake-segment-tester.com"])
+        SEGAnalytics.shared()?.track("Completed Order", properties: ["title": "Launch Screen", "revenue": 14.50])
+        
         return true
     }
 
