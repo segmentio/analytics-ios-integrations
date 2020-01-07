@@ -1,0 +1,33 @@
+PODS:
+  - Analytics (3.7.0)
+  - Expecta (1.0.6)
+  - FBSDKCoreKit (5.13.1):
+    - FBSDKCoreKit/Basics (= 5.13.1)
+    - FBSDKCoreKit/Core (= 5.13.1)
+  - FBSDKCoreKit/Basics (5.13.1)
+  - FBSDKCoreKit/Core (5.13.1):
+    - FBSDKCoreKit/Basics
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Analytics (~> 3.0)
+  - Expecta
+  - FBSDKCoreKit (~> 5.0)
+  - Specta
+
+SPEC REPOS:
+  trunk:
+    - Analytics
+    - Expecta
+    - FBSDKCoreKit
+    - Specta
+
+SPEC CHECKSUMS:
+  Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: 6b969646294d8bb3aab2b422f522e2a513dce7ec
+
+COCOAPODS: 1.8.4
