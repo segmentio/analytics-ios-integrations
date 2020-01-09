@@ -19,6 +19,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E03269B023C6A8CB00FF7F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E03269AB23C6A8CB00FF7F2E /* Segment-Firebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E032698623C6A7A300FF7F2E;
+			remoteInfo = "Segment-Firebase";
+		};
+		E03269B223C6A8CB00FF7F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E03269AB23C6A8CB00FF7F2E /* Segment-Firebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E032698F23C6A7A300FF7F2E;
+			remoteInfo = "Segment-FirebaseTests";
+		};
 		E072C5692386105D00F90DC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E072C5552386105D00F90DC6 /* Project object */;
@@ -37,6 +51,7 @@
 		A16715D16D757D87A83542D3 /* Pods-Segment-Facebook-Segment-FacebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Facebook-Segment-FacebookTests.debug.xcconfig"; path = "Target Support Files/Pods-Segment-Facebook-Segment-FacebookTests/Pods-Segment-Facebook-Segment-FacebookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA5659B9A9416FCD451C5F5A /* Pods-Common-Segment-Facebook-Segment-FacebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-Segment-Facebook-Segment-FacebookTests.debug.xcconfig"; path = "Target Support Files/Pods-Common-Segment-Facebook-Segment-FacebookTests/Pods-Common-Segment-Facebook-Segment-FacebookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D763D45B1B98E85BA118E21D /* Pods_Segment_Facebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Segment_Facebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03269AB23C6A8CB00FF7F2E /* Segment-Firebase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Segment-Firebase.xcodeproj"; path = "../Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj"; sourceTree = "<group>"; };
 		E072C55E2386105D00F90DC6 /* Segment_Facebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Segment_Facebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E072C5612386105D00F90DC6 /* Segment_Facebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segment_Facebook.h; sourceTree = "<group>"; };
 		E072C5622386105D00F90DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +92,7 @@
 		81391500C447EA1EE21D55FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				E03269AB23C6A8CB00FF7F2E /* Segment-Firebase.xcodeproj */,
 				E8932F1D209500510A2C74D9 /* Pods-Segment-Facebook.debug.xcconfig */,
 				089AF6D2D90698A34EB17784 /* Pods-Segment-Facebook.release.xcconfig */,
 				551764014D1826EE8FD3DB46 /* Pods-Segment-FacebookTests.debug.xcconfig */,
@@ -110,6 +126,15 @@
 				E072C57C238610A300F90DC6 /* SEGFacebookAppEventsIntegrationFactory.m */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		E03269AC23C6A8CB00FF7F2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E03269B123C6A8CB00FF7F2E /* Segment_Firebase.framework */,
+				E03269B323C6A8CB00FF7F2E /* Segment-FirebaseTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E072C5542386105D00F90DC6 = {
@@ -241,6 +266,12 @@
 			mainGroup = E072C5542386105D00F90DC6;
 			productRefGroup = E072C55F2386105D00F90DC6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E03269AC23C6A8CB00FF7F2E /* Products */;
+					ProjectRef = E03269AB23C6A8CB00FF7F2E /* Segment-Firebase.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E072C55D2386105D00F90DC6 /* Segment-Facebook */,
@@ -248,6 +279,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E03269B123C6A8CB00FF7F2E /* Segment_Firebase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Segment_Firebase.framework;
+			remoteRef = E03269B023C6A8CB00FF7F2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E03269B323C6A8CB00FF7F2E /* Segment-FirebaseTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Segment-FirebaseTests.xctest";
+			remoteRef = E03269B223C6A8CB00FF7F2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E072C55C2386105D00F90DC6 /* Resources */ = {
