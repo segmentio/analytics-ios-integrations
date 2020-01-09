@@ -31,7 +31,7 @@ end
 target 'Segment-Firebase' do
   
   project 'Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj'
-  pod 'Firebase
+  pod 'Firebase'
  
  target 'Segment-FirebaseTests' do
   testing_pods
