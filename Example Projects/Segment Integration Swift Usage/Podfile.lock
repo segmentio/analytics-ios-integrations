@@ -1,0 +1,32 @@
+PODS:
+  - Analytics (3.7.0)
+  - FBSDKCoreKit (5.13.1):
+    - FBSDKCoreKit/Basics (= 5.13.1)
+    - FBSDKCoreKit/Core (= 5.13.1)
+  - FBSDKCoreKit/Basics (5.13.1)
+  - FBSDKCoreKit/Core (5.13.1):
+    - FBSDKCoreKit/Basics
+  - Segment-Facebook-App-Events (1.0.4):
+    - Analytics (~> 3.0)
+    - FBSDKCoreKit (~> 5.0)
+
+DEPENDENCIES:
+  - Segment-Facebook-App-Events (from `../../Integrations/analytics-ios-integration-facebook-app-events`)
+
+SPEC REPOS:
+  trunk:
+    - Analytics
+    - FBSDKCoreKit
+
+EXTERNAL SOURCES:
+  Segment-Facebook-App-Events:
+    :path: "../../Integrations/analytics-ios-integration-facebook-app-events"
+
+SPEC CHECKSUMS:
+  Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Segment-Facebook-App-Events: fc089c58a163dbfb817a8a65b2e5023afd919843
+
+PODFILE CHECKSUM: 277853ab5f3deec3ab42dd4092951f8d6a73a666
+
+COCOAPODS: 1.8.4
