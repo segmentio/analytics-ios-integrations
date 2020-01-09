@@ -10,7 +10,4 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj">
-   </FileRef>
 </Workspace>
