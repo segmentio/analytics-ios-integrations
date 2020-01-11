@@ -38,26 +38,6 @@
                ReferencedContainer = "container:Segment-Facebook.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E032698E23C6A7A300FF7F2E"
-               BuildableName = "Segment-FirebaseTests.xctest"
-               BlueprintName = "Segment-FirebaseTests"
-               ReferencedContainer = "container:../analytics-ios-integration-firebase/Segment-Firebase.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E050C83D23BAB74A0001A31A"
-               BuildableName = "Segment-MixpanelTests.xctest"
-               BlueprintName = "Segment-MixpanelTests"
-               ReferencedContainer = "container:../analytics-ios-integration-mixpanel/Segment-MixPanel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
