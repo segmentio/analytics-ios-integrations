@@ -6,6 +6,20 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E01A011F23C942570067F417 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E01A012223C942570067F417 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				E01A012423C943520067F417 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4978C20327426E4A5008D661 /* Pods_Segment_Facebook_Segment_FacebookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67EDB3E8F4A5442055CF49 /* Pods_Segment_Facebook_Segment_FacebookTests.framework */; };
 		AABDE7E59695C2A95B0D3721 /* Pods_Segment_Facebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D763D45B1B98E85BA118E21D /* Pods_Segment_Facebook.framework */; };
@@ -223,6 +237,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Segment;
 				TargetAttributes = {
+					E01A011F23C942570067F417 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					E072C55D2386105D00F90DC6 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -245,6 +262,7 @@
 			targets = (
 				E072C55D2386105D00F90DC6 /* Segment-Facebook */,
 				E072C5662386105D00F90DC6 /* Segment-FacebookTests */,
+				E01A011F23C942570067F417 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +346,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E01A012423C943520067F417 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "unset LLVM_TARGET_TRIPLE_SUFFIX\n\nxcodebuild -target Segment-Facebook -configuration Debug -scheme Segment-Facebook clean\nxcodebuild -target Segment-Facebook -configuration Debug -scheme Segment-Facebook COMPILER_INDEX_STORE_ENABLE=NO | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database —e Segment_Facebook.h Segment_Facebook_vers.c -- build -report-type xcode\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -359,6 +394,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E01A012023C942570067F417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E01A012123C942570067F417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E072C5702386105D00F90DC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -481,9 +532,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8932F1D209500510A2C74D9 /* Pods-Segment-Facebook.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YKC2MJQDVL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -545,6 +597,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YKC2MJQDVL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -604,6 +657,7 @@
 			baseConfigurationReference = A16715D16D757D87A83542D3 /* Pods-Segment-Facebook-Segment-FacebookTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YKC2MJQDVL;
 				INFOPLIST_FILE = "Segment-FacebookTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,6 +675,7 @@
 			baseConfigurationReference = 1DEE5C0456B501E864FFEF25 /* Pods-Segment-Facebook-Segment-FacebookTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YKC2MJQDVL;
 				INFOPLIST_FILE = "Segment-FacebookTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E01A012223C942570067F417 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01A012023C942570067F417 /* Debug */,
+				E01A012123C942570067F417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E072C5582386105D00F90DC6 /* Build configuration list for PBXProject "Segment-Facebook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
