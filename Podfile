@@ -18,6 +18,10 @@ def testing_pods
   pod 'Specta'
 end
 
+def testing_exra_pods
+   pod 'OCMockito'
+end
+
 shared_pods
 
 target 'Segment-Facebook' do
@@ -38,7 +42,7 @@ target 'Segment-Firebase' do
  
  target 'Segment-FirebaseTests' do
   testing_pods
-  pod 'OCMockito'
+  testing_exra_pods
   end
 end
 
@@ -50,7 +54,7 @@ target 'Segment-Mixpanel' do
 
   
   target 'Segment-MixpanelTests' do
-    pod 'OCMockito', '~> 3.0'
+    testing_exra_pods
     testing_pods
   end
 end
