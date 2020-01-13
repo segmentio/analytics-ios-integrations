@@ -1,13 +1,5 @@
 #!/bin/sh
 
-# Constants for colors
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-
-red=`tput setaf 1`
-green=`tput setaf 2`
-
 # Install dependencies from gem file to maintain consistency in all environments
 echo "$(tput setaf 4)Checking if gem 'Bundler' exists"
 
