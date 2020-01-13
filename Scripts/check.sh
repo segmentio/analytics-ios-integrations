@@ -49,3 +49,15 @@ else
         brew upgrade oclint
     fi
 fi
+
+echo "$(tput setaf 4)Checking if 'clang-format' exists.."
+
+which -s clang-format
+
+if [[ $? != 0 ]] ; then
+
+	brew install clang-format
+	export PATH=/usr/local/bin:$PATH
+        
+fi
+
