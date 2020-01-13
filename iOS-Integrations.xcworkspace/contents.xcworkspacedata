@@ -5,6 +5,12 @@
       location = "group:Integrations/analytics-ios-integration-facebook-app-events/Segment-Facebook.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Pods/../Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj">
    </FileRef>
 </Workspace>

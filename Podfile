@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 workspace 'iOS-Integrations.xcworkspace'
 project 'Integrations/analytics-ios-integration-facebook-app-events/Segment-Facebook.xcodeproj'
+project 'Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj'
 use_frameworks!
 
 def shared_pods
@@ -26,6 +27,18 @@ target 'Segment-Facebook' do
   testing_pods
   end
 end
+
+target 'Segment-Firebase' do
+  
+  project 'Integrations/analytics-ios-integration-firebase/Segment-Firebase.xcodeproj'
+  pod 'Firebase'
+ 
+ target 'Segment-FirebaseTests' do
+  testing_pods
+  pod 'OCMockito'
+  end
+end
+
 
 
 

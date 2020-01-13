@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Analytics/SEGAnalytics.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [[SEGAnalytics sharedAnalytics] identify:@"123abc" traits:@{ @"name" : @"fred",
+                                                                 @"gender" : @"male" }];
 }
 
 

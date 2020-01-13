@@ -11,6 +11,8 @@ end
 target 'Simple Integrations Example' do
   
   pod 'Segment-Facebook-App-Events', :path => '../../Integrations/analytics-ios-integration-facebook-app-events'
+
+  pod 'Segment-Firebase', :path => '../../Integrations/analytics-ios-integration-Firebase'
  
  target 'Simple Integrations ExampleTests' do
   testing_pods

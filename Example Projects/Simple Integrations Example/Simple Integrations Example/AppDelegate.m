@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Analytics/SEGAnalytics.h>
 #import <SEGFacebookAppEventsIntegrationFactory.h>
+#import <SEGFirebaseIntegrationFactory.h>
 
 @interface AppDelegate ()
 
@@ -22,10 +23,15 @@
     
     // Override point for customization after application launch.
     [SEGAnalytics debug:YES];
-    SEGAnalyticsConfiguration *config = [SEGAnalyticsConfiguration configurationWithWriteKey:@"gnjyuUpq7mZYtLM76mwltoiZcDsFpnfY"];
+    SEGAnalyticsConfiguration *config = [SEGAnalyticsConfiguration configurationWithWriteKey:@"WRITE_KEY"];
+    
+    config.trackApplicationLifecycleEvents = YES;          // Enable this to record certain application events automatically!
+    config.recordScreenViews = YES;                        // Enable this to record screen views automatically!
+    config.flushAt = 1;                                    // Flush events to Segment every 1 event
     
     // Add any of your bundled integrations.
-    [config use:[SEGFacebookAppEventsIntegrationFactory instance]];
+    [config use:[SEGFacebookAppEventsIntegrationFactory instance]]; //Use Facebook
+    [config use:[SEGFirebaseIntegrationFactory instance]]; // Use Firebase
     
     [SEGAnalytics setupWithConfiguration:config];
     
@@ -34,6 +40,10 @@
     
     [[SEGAnalytics sharedAnalytics] track:@"Completed Order"
                                properties:@{ @"title": @"Launch Screen", @"revenue": @14.50 }];
+    
+   
+
+    [SEGAnalytics debug:YES];
     
     return YES;
 }
