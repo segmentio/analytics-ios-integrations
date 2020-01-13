@@ -46,6 +46,8 @@ end
 target 'Segment-Mixpanel' do
   
   project 'Integrations/analytics-ios-integration-mixpanel/Segment-Mixpanel.xcodeproj'
+  pod 'Mixpanel', '~> 3.5'
+
   
   target 'Segment-MixpanelTests' do
     pod 'OCMockito', '~> 3.0'
