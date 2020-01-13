@@ -1,6 +1,7 @@
 #!/bin/sh
 
- # Run pod update to install all dependencies and generate workspace files
+
+# Run pod update to install all dependencies and generate workspace files
 
 echo "Installing and Updating Integrations dependencies"
 bundle exec pod update
