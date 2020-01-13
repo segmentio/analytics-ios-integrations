@@ -51,7 +51,7 @@ target 'Segment-Mixpanel' do
   
   project 'Integrations/analytics-ios-integration-mixpanel/Segment-Mixpanel.xcodeproj'
  
-  pod 'Mixpanel', '~> 3.5.0'
+  pod 'Mixpanel', '3.5.0'
 
   target 'Segment-MixpanelTests' do
     testing_extra_pods

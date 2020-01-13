@@ -67,7 +67,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.4.0):
     - GoogleUtilities/Logger
-  - Mixpanel (3.5.1)
+  - Mixpanel (3.5.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -83,7 +83,7 @@ DEPENDENCIES:
   - Expecta
   - FBSDKCoreKit (~> 5.0)
   - Firebase
-  - Mixpanel (~> 3.5.0)
+  - Mixpanel (= 3.5.0)
   - OCMockito
   - Specta
 
@@ -122,12 +122,12 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
   GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
-  Mixpanel: 1839fc7299c43b009c301883f895423715437431
+  Mixpanel: 399997670f5452de026449f9e9ecd52eccbb9ff7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   OCHamcrest: b284c9592c28c1e4025a8542e67ea41a635d0d73
   OCMockito: 677cbb4a18fd492b5a4fb10144dada4de5ddb877
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 717b94c65e05e6b200fc9203b2b21d0ee6548b8e
+PODFILE CHECKSUM: 5ab73ad3fa9f3f2a66c7ab4f01499b99ec025ea4
 
 COCOAPODS: 1.8.4

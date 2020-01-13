@@ -28,7 +28,46 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E072C5662386105D00F90DC6"
+               BuildableName = "Segment-FacebookTests.xctest"
+               BlueprintName = "Segment-FacebookTests"
+               ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E032698E23C6A7A300FF7F2E"
+               BuildableName = "Segment-FirebaseTests.xctest"
+               BlueprintName = "Segment-FirebaseTests"
+               ReferencedContainer = "container:../analytics-ios-integration-firebase/Segment-Firebase.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E050C83D23BAB74A0001A31A"
+               BuildableName = "Segment-MixpanelTests.xctest"
+               BlueprintName = "Segment-MixpanelTests"
+               ReferencedContainer = "container:../analytics-ios-integration-mixpanel/Segment-MixPanel.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E072C55D2386105D00F90DC6"
+            BuildableName = "Segment_Facebook.framework"
+            BlueprintName = "Segment-Facebook"
+            ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

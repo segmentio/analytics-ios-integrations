@@ -12,11 +12,11 @@
 		E050C83F23BAB74A0001A31A /* Segment_Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050C83523BAB74A0001A31A /* Segment_Mixpanel.framework */; };
 		E050C84423BAB74A0001A31A /* Segment_MixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */; };
 		E050C84623BAB74A0001A31A /* Segment_Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C83823BAB74A0001A31A /* Segment_Mixpanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E050C85B23BAB7890001A31A /* SEGPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */; };
 		E050C86D23BABA040001A31A /* SEGMixpanelIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C86923BABA040001A31A /* SEGMixpanelIntegrationFactory.h */; };
 		E050C86E23BABA040001A31A /* SEGMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C86A23BABA040001A31A /* SEGMixpanelIntegration.m */; };
 		E050C86F23BABA040001A31A /* SEGMixpanelIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = E050C86B23BABA040001A31A /* SEGMixpanelIntegration.h */; };
 		E050C87023BABA040001A31A /* SEGMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E050C86C23BABA040001A31A /* SEGMixpanelIntegrationFactory.m */; };
+		E0A2B4B323CD1C1E0017C5A9 /* SEGPayloadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A2B4B223CD1C1E0017C5A9 /* SEGPayloadBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +40,12 @@
 		E050C83E23BAB74A0001A31A /* Segment-MixpanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segment-MixpanelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Segment_MixpanelTests.m; sourceTree = "<group>"; };
 		E050C84523BAB74A0001A31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGPayloadBuilder.m; path = "../../../analytics-ios-integration-mixpanel/Segment-MixPanelTests/SEGPayloadBuilder.m"; sourceTree = "<group>"; };
-		E050C85A23BAB7890001A31A /* SEGPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGPayloadBuilder.h; path = "../../../analytics-ios-integration-mixpanel/Segment-MixPanelTests/SEGPayloadBuilder.h"; sourceTree = "<group>"; };
 		E050C86923BABA040001A31A /* SEGMixpanelIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGMixpanelIntegrationFactory.h; sourceTree = "<group>"; };
 		E050C86A23BABA040001A31A /* SEGMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGMixpanelIntegration.m; sourceTree = "<group>"; };
 		E050C86B23BABA040001A31A /* SEGMixpanelIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGMixpanelIntegration.h; sourceTree = "<group>"; };
 		E050C86C23BABA040001A31A /* SEGMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGMixpanelIntegrationFactory.m; sourceTree = "<group>"; };
+		E0A2B4B123CD1C1E0017C5A9 /* SEGPayloadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGPayloadBuilder.h; path = "Segment-MixPanelTests/SEGPayloadBuilder.h"; sourceTree = SOURCE_ROOT; };
+		E0A2B4B223CD1C1E0017C5A9 /* SEGPayloadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGPayloadBuilder.m; path = "Segment-MixPanelTests/SEGPayloadBuilder.m"; sourceTree = SOURCE_ROOT; };
 		E3F91D6204F36A7D2B52A77B /* Pods-Segment-Mixpanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Mixpanel.debug.xcconfig"; path = "Target Support Files/Pods-Segment-Mixpanel/Pods-Segment-Mixpanel.debug.xcconfig"; sourceTree = "<group>"; };
 		F74BA91BC789741F7C04F240 /* Pods-Segment-Mixpanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segment-Mixpanel.release.xcconfig"; path = "Target Support Files/Pods-Segment-Mixpanel/Pods-Segment-Mixpanel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,8 +124,8 @@
 		E050C84223BAB74A0001A31A /* Segment-MixpanelTests */ = {
 			isa = PBXGroup;
 			children = (
-				E050C85A23BAB7890001A31A /* SEGPayloadBuilder.h */,
-				E050C85923BAB7890001A31A /* SEGPayloadBuilder.m */,
+				E0A2B4B123CD1C1E0017C5A9 /* SEGPayloadBuilder.h */,
+				E0A2B4B223CD1C1E0017C5A9 /* SEGPayloadBuilder.m */,
 				E050C84323BAB74A0001A31A /* Segment_MixpanelTests.m */,
 				E050C84523BAB74A0001A31A /* Info.plist */,
 			);
@@ -224,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E050C82F23BAB74A0001A31A /* Build configuration list for PBXProject "Segment-Mixpanel" */;
+			buildConfigurationList = E050C82F23BAB74A0001A31A /* Build configuration list for PBXProject "Segment-MixPanel" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -337,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E050C85B23BAB7890001A31A /* SEGPayloadBuilder.m in Sources */,
+				E0A2B4B323CD1C1E0017C5A9 /* SEGPayloadBuilder.m in Sources */,
 				E050C84423BAB74A0001A31A /* Segment_MixpanelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +556,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E050C82F23BAB74A0001A31A /* Build configuration list for PBXProject "Segment-Mixpanel" */ = {
+		E050C82F23BAB74A0001A31A /* Build configuration list for PBXProject "Segment-MixPanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E050C84723BAB74A0001A31A /* Debug */,
