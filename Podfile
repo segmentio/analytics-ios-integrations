@@ -18,7 +18,7 @@ def testing_pods
   pod 'Specta'
 end
 
-def testing_exra_pods
+def testing_extra_pods
    pod 'OCMockito'
 end
 
@@ -42,7 +42,7 @@ target 'Segment-Firebase' do
  
  target 'Segment-FirebaseTests' do
   testing_pods
-  testing_exra_pods
+  testing_extra_pods
   end
 end
 
@@ -50,11 +50,11 @@ end
 target 'Segment-Mixpanel' do
   
   project 'Integrations/analytics-ios-integration-mixpanel/Segment-Mixpanel.xcodeproj'
-  pod 'Mixpanel', '~> 3.5'
+ 
+  pod 'Mixpanel', '~> 3.5.0'
 
-  
   target 'Segment-MixpanelTests' do
-    testing_exra_pods
+    testing_extra_pods
     testing_pods
   end
 end
