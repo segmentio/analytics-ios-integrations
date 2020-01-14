@@ -20,10 +20,10 @@ git clone https://github.com/segmentio/analytics-ios-integrations
 
 #### 6. Close project and open the iOS-Integrations.xcworkspace in the parent folder, drag the xxxx.xcodeproj to the workspace. It should be added and show as a target but a framework. 
 
-#### 7. Copy the podspec file and set
+#### 7. Copy the podspec and license files and set in podspec
 
 ```
-s.source         = { :git => '' }
+s.source         = { :git => 'https://github.com/segmentio/analytics-ios-integrations' }
 s.source_files = 'Source/**/*'
 s.exclude_files = 'Source/Supporting Files'
 
@@ -40,7 +40,15 @@ Also update dependencies version to latest if required.
 
 And run pod install. If successful, running and testing will work correctly. 
 
-#### 9. In example project, add the newly added destination by setting its relative path.
+#### 9. For tests to compile successfully from command line, code signing for the test targets must be set. (It's enough that it's a personal team, Apple ID does not need to have purchased developer program)
+
+#### 10. It may happen that the pod install has created extra schemes in workspace, simply delete them, but (choose Remove reference) upon delete confirmation.
+
+#### 11. It may also happen that the test targets have not been created, in that case, select scheme -> edit scheme ->  test -> +  and it will automatically create a test scheme.
+
+#### 12. It may also happen that after pod install, all pods are added as targets, in that case, simply select "Manage Schemes" and uncheck all the unrequited targets. (Extra step that will not affect any of the project functionality)
+
+#### 13. In example project, add the newly added destination by setting its relative path.
 
 
 
