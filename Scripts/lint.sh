@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Move to parent directory to format and lint
+# Move to parent directory to lint
 cd ..
 
 # Run oclint related commands to check for any issues
