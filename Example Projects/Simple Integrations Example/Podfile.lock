@@ -7,14 +7,92 @@ PODS:
   - FBSDKCoreKit/Basics (5.13.1)
   - FBSDKCoreKit/Core (5.13.1):
     - FBSDKCoreKit/Basics
+  - Firebase/Core (6.14.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.1.7)
+  - Firebase/CoreOnly (6.14.0):
+    - FirebaseCore (= 6.5.0)
+  - FirebaseAnalytics (6.1.7):
+    - FirebaseCore (~> 6.5)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.1.7)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseCore (6.5.0):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.4)
+    - GoogleUtilities/Logger (~> 6.4)
+  - FirebaseCoreDiagnostics (1.1.2):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.1.0)
+  - FirebaseInstanceID (4.2.8):
+    - FirebaseCore (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.4)
+    - GoogleUtilities/UserDefaults (~> 6.4)
+  - GoogleAppMeasurement (6.1.7):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (3.2.0)
+  - GoogleDataTransportCCTSupport (1.2.3):
+    - GoogleDataTransport (~> 3.2)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.4.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.4.0)
+  - GoogleUtilities/Logger (6.4.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.4.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.4.0)"
+  - GoogleUtilities/Reachability (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.4.0):
+    - GoogleUtilities/Logger
+  - Mixpanel (3.5.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
   - Segment-Facebook-App-Events (1.0.4):
     - Analytics (~> 3.0)
     - FBSDKCoreKit (~> 5.0)
+  - Segment-Firebase (2.5.0):
+    - Analytics (~> 3.2)
+    - Firebase/Core (~> 6.2)
+    - FirebaseAnalytics (~> 6.1)
+    - Segment-Firebase/Core (= 2.5.0)
+  - Segment-Firebase/Core (2.5.0):
+    - Analytics (~> 3.2)
+    - Firebase/Core (~> 6.2)
+    - FirebaseAnalytics (~> 6.1)
+  - Segment-Mixpanel (1.5.0):
+    - Analytics (~> 3.0)
+    - Mixpanel (~> 3.5)
   - Specta (1.0.7)
 
 DEPENDENCIES:
   - Expecta
   - Segment-Facebook-App-Events (from `../../Integrations/analytics-ios-integration-facebook-app-events`)
+  - Segment-Firebase (from `../../Integrations/analytics-ios-integration-Firebase`)
+  - Segment-Mixpanel (from `../../Integrations/analytics-ios-integration-mixpanel`)
   - Specta
 
 SPEC REPOS:
@@ -22,19 +100,49 @@ SPEC REPOS:
     - Analytics
     - Expecta
     - FBSDKCoreKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - Mixpanel
+    - nanopb
     - Specta
 
 EXTERNAL SOURCES:
   Segment-Facebook-App-Events:
     :path: "../../Integrations/analytics-ios-integration-facebook-app-events"
+  Segment-Firebase:
+    :path: "../../Integrations/analytics-ios-integration-Firebase"
+  Segment-Mixpanel:
+    :path: "../../Integrations/analytics-ios-integration-mixpanel"
 
 SPEC CHECKSUMS:
   Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
+  FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
+  FirebaseCore: 632e05cc5e1199d9147122c16d92305eb04c34bd
+  FirebaseCoreDiagnostics: 511f4f3ed7d440bb69127e8b97c2bc8befae639e
+  FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
+  FirebaseInstanceID: ce993a3c3670a8f5d47ce371ac5d143c560608c5
+  GoogleAppMeasurement: db118eb61a97dd8c4f7014e368d3c335cbbcf80a
+  GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
+  GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
+  GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  Mixpanel: 399997670f5452de026449f9e9ecd52eccbb9ff7
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Segment-Facebook-App-Events: fc089c58a163dbfb817a8a65b2e5023afd919843
+  Segment-Firebase: aa9d6e1481431a4a5e173c71ef620c0db8c723b2
+  Segment-Mixpanel: 2cba240ce309198b1af509df3f0defa7d545d770
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: fca958077eed15b55edfd1be4a345eff84fd884e
+PODFILE CHECKSUM: 0882cf879ae9caae01e2ac0d41b0bce736942679
 
 COCOAPODS: 1.8.4

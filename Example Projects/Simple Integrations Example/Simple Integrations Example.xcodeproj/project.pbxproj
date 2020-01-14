@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00943BF8D7241E5871A6F493 /* Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C10A5B6528620BE5B204C0B /* Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests.framework */; };
 		65EF898118CF6063F185B4D8 /* Pods_Simple_Integrations_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9826CE3BF476BAD9D990506 /* Pods_Simple_Integrations_Example.framework */; };
+		E03269B723C6AEC300FF7F2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E03269B623C6AEC300FF7F2E /* GoogleService-Info.plist */; };
 		E072C643238629E200F90DC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E072C642238629E200F90DC6 /* AppDelegate.m */; };
 		E072C646238629E200F90DC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E072C645238629E200F90DC6 /* ViewController.m */; };
 		E072C649238629E200F90DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E072C647238629E200F90DC6 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		7C10A5B6528620BE5B204C0B /* Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Integrations_Example_Simple_Integrations_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0738114D02C240EED1AD23B /* Pods-Simple Integrations Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Integrations Example.debug.xcconfig"; path = "../Example Projects/Simple Integrations Example/Pods/Target Support Files/Pods-Simple Integrations Example/Pods-Simple Integrations Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C9826CE3BF476BAD9D990506 /* Pods_Simple_Integrations_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Integrations_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03269B623C6AEC300FF7F2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E072C63E238629E200F90DC6 /* Simple Integrations Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Integrations Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E072C641238629E200F90DC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E072C642238629E200F90DC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				E072C64C238629E300F90DC6 /* LaunchScreen.storyboard */,
 				E072C64F238629E300F90DC6 /* Info.plist */,
 				E072C650238629E300F90DC6 /* main.m */,
+				E03269B623C6AEC300FF7F2E /* GoogleService-Info.plist */,
 			);
 			path = "Simple Integrations Example";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E072C64E238629E300F90DC6 /* LaunchScreen.storyboard in Resources */,
+				E03269B723C6AEC300FF7F2E /* GoogleService-Info.plist in Resources */,
 				E072C64B238629E300F90DC6 /* Assets.xcassets in Resources */,
 				E072C649238629E200F90DC6 /* Main.storyboard in Resources */,
 			);
