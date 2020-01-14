@@ -7,8 +7,7 @@
 
 #pragma mark - Initialization
 
-- (id)initWithSettings:(NSDictionary *)settings
-{
+- (id)initWithSettings:(NSDictionary *)settings {
     if (self = [super init]) {
         self.settings = settings;
         self.firebaseClass = [FIRAnalytics class];
@@ -38,8 +37,7 @@
     return self;
 }
 
-- (void)identify:(SEGIdentifyPayload *)payload
-{
+- (void)identify:(SEGIdentifyPayload *)payload {
     if (payload.userId) {
         [self.firebaseClass setUserID:payload.userId];
         SEGLog(@"[FIRAnalytics setUserId:%@]", payload.userId);
@@ -47,15 +45,14 @@
     // Firebase requires user properties to be an NSString
     NSDictionary *mappedTraits = [SEGFirebaseIntegration mapToStrings:payload.traits];
     [mappedTraits enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *obj, BOOL *stop) {
-        NSString *trait = [key stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-        NSString *value = [obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        [self.firebaseClass setUserPropertyString:value forName:trait];
-        SEGLog(@"[FIRAnalytics setUserPropertyString:%@ forName:%@]", value, trait);
+      NSString *trait = [key stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+      NSString *value = [obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+      [self.firebaseClass setUserPropertyString:value forName:trait];
+      SEGLog(@"[FIRAnalytics setUserPropertyString:%@ forName:%@]", value, trait);
     }];
 }
 
-- (void)track:(SEGTrackPayload *)payload
-{
+- (void)track:(SEGTrackPayload *)payload {
     NSString *name = [self formatFirebaseEventNames:payload.event];
     NSDictionary *parameters = [self returnMappedFirebaseParameters:payload.properties];
 
@@ -73,8 +70,7 @@
 // Maps Segment Spec to Firebase Constants
 // https://firebase.google.com/docs/reference/ios/firebaseanalytics/api/reference/Constants#/c:FIRParameterNames.h@kFIRParameterCampaign
 
-- (NSString *)formatFirebaseEventNames:(NSString *)event
-{
+- (NSString *)formatFirebaseEventNames:(NSString *)event {
     NSDictionary *mapper = [NSDictionary dictionaryWithObjectsAndKeys:
                                              kFIREventSelectContent, @"Product Clicked",
                                              kFIREventViewItem, @"Product Viewed",
@@ -96,9 +92,9 @@
     NSString *regexString = @"^[a-zA-Z0-9_]+$";
     NSError *error = NULL;
     NSRegularExpression *regex =
-    [NSRegularExpression regularExpressionWithPattern:regexString
-                                              options:0
-                                                error:&error];
+        [NSRegularExpression regularExpressionWithPattern:regexString
+                                                  options:0
+                                                    error:&error];
     NSUInteger numberOfMatches = [regex numberOfMatchesInString:event
                                                         options:0
                                                           range:NSMakeRange(0, [event length])];
@@ -106,7 +102,7 @@
         return mappedEvent;
     } else if (numberOfMatches == 0) {
         NSString *trimmedEvent = [event stringByTrimmingCharactersInSet:
-                                  [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                                            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
         if ([periodSeparatedEvent count] > 1) {
             return [trimmedEvent stringByReplacingOccurrencesOfString:@"." withString:@"_"];
         } else {
@@ -124,8 +120,7 @@
 /// characters and underscores ("_"), and must start with an alphabetic character. Param values can
 /// be up to 36 characters long. The "firebase_" prefix is reserved and should not be used.
 
-- (NSDictionary *)returnMappedFirebaseParameters:(NSDictionary *)properties
-{
+- (NSDictionary *)returnMappedFirebaseParameters:(NSDictionary *)properties {
     NSDictionary *map = [NSDictionary dictionaryWithObjectsAndKeys:
                                           kFIRParameterItemCategory, @"category",
                                           kFIRParameterItemID, @"product_id",
@@ -144,55 +139,52 @@
     return [SEGFirebaseIntegration mapToFirebaseParameters:properties withMap:map];
 }
 
-+ (NSDictionary *)mapToFirebaseParameters:(NSDictionary *)properties withMap:(NSDictionary *)mapper
-{
++ (NSDictionary *)mapToFirebaseParameters:(NSDictionary *)properties withMap:(NSDictionary *)mapper {
     NSMutableDictionary *mappedParams = [NSMutableDictionary dictionaryWithDictionary:properties];
     [mapper enumerateKeysAndObjectsUsingBlock:^(NSString *original, NSString *new, BOOL *stop) {
-        id data = [properties objectForKey:original];
-        if (data) {
-            [mappedParams removeObjectForKey:original];
-            [mappedParams setObject:data forKey:new];
-        }
+      id data = [properties objectForKey:original];
+      if (data) {
+          [mappedParams removeObjectForKey:original];
+          [mappedParams setObject:data forKey:new];
+      }
     }];
 
     return [formatEventProperties(mappedParams) copy];
 }
 
-NSDictionary *formatEventProperties(NSDictionary *dictionary)
-{
+NSDictionary *formatEventProperties(NSDictionary *dictionary) {
     NSMutableDictionary *output = [NSMutableDictionary dictionaryWithCapacity:dictionary.count];
     [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id data, BOOL *stop) {
-        [output removeObjectForKey:key];
-        NSArray *periodSeparatedKey = [key componentsSeparatedByString:@"."];
-        NSString *trimmedKey = [key stringByTrimmingCharactersInSet:
-                                  [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        if ([periodSeparatedKey count] > 1) {
-            key = [trimmedKey stringByReplacingOccurrencesOfString:@"." withString:@"_"];
-        } else {
-            key = [trimmedKey stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-        }
-        if ([data isKindOfClass:[NSNumber class]]) {
-            data = [NSNumber numberWithDouble:[data doubleValue]];
-            [output setObject:data forKey:key];
-        } else {
-            [output setObject:data forKey:key];
-        }
+      [output removeObjectForKey:key];
+      NSArray *periodSeparatedKey = [key componentsSeparatedByString:@"."];
+      NSString *trimmedKey = [key stringByTrimmingCharactersInSet:
+                                      [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+      if ([periodSeparatedKey count] > 1) {
+          key = [trimmedKey stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+      } else {
+          key = [trimmedKey stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+      }
+      if ([data isKindOfClass:[NSNumber class]]) {
+          data = [NSNumber numberWithDouble:[data doubleValue]];
+          [output setObject:data forKey:key];
+      } else {
+          [output setObject:data forKey:key];
+      }
     }];
 
     return [output copy];
 }
 
 // Firebase requires all User traits to be Strings
-+ (NSDictionary *)mapToStrings:(NSDictionary *)dictionary
-{
++ (NSDictionary *)mapToStrings:(NSDictionary *)dictionary {
     NSMutableDictionary *output = [NSMutableDictionary dictionaryWithCapacity:dictionary.count];
 
     [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id data, BOOL *stop) {
-        if ([data isKindOfClass:[NSString class]]) {
-            [output setObject:data forKey:key];
-        } else {
-            [output setObject:[NSString stringWithFormat:@"%@", data] forKey:key];
-        }
+      if ([data isKindOfClass:[NSString class]]) {
+          [output setObject:data forKey:key];
+      } else {
+          [output setObject:[NSString stringWithFormat:@"%@", data] forKey:key];
+      }
     }];
 
     return [output copy];

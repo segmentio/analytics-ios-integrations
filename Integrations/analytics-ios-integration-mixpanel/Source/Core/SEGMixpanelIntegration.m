@@ -6,8 +6,7 @@
 @implementation SEGMixpanelIntegration
 
 
-- (instancetype)initWithSettings:(NSDictionary *)settings andMixpanel:(Mixpanel *)mixpanel
-{
+- (instancetype)initWithSettings:(NSDictionary *)settings andMixpanel:(Mixpanel *)mixpanel {
     if (self = [super init]) {
         self.settings = settings;
         self.mixpanel = mixpanel;
@@ -15,34 +14,31 @@
     return self;
 }
 
--(instancetype)initWithSettings:(NSDictionary *)settings andLaunchOptions:(NSDictionary *)launchOptions
-{
+- (instancetype)initWithSettings:(NSDictionary *)settings andLaunchOptions:(NSDictionary *)launchOptions {
 
-    if (self= [super init]) {
+    if (self = [super init]) {
         self.settings = settings;
         NSString *token = [self.settings objectForKey:@"token"];
-        self.mixpanel = [Mixpanel sharedInstanceWithToken: token launchOptions:launchOptions];
+        self.mixpanel = [Mixpanel sharedInstanceWithToken:token launchOptions:launchOptions];
     }
     return self;
 }
 
-+ (NSDictionary *)map:(NSDictionary *)dictionary withMap:(NSDictionary *)map
-{
++ (NSDictionary *)map:(NSDictionary *)dictionary withMap:(NSDictionary *)map {
     NSMutableDictionary *mapped = [NSMutableDictionary dictionaryWithDictionary:dictionary];
 
     [map enumerateKeysAndObjectsUsingBlock:^(NSString *original, NSString *new, BOOL *stop) {
-        id data = [mapped objectForKey:original];
-        if (data) {
-            [mapped setObject:data forKey:new];
-            [mapped removeObjectForKey:original];
-        }
+      id data = [mapped objectForKey:original];
+      if (data) {
+          [mapped setObject:data forKey:new];
+          [mapped removeObjectForKey:original];
+      }
     }];
 
     return [mapped copy];
 }
 
-- (void)identify:(SEGIdentifyPayload *)payload
-{
+- (void)identify:(SEGIdentifyPayload *)payload {
     // Ensure that the userID is set and valid (i.e. a non-empty string).
     if (payload.userId != nil && [payload.userId length] != 0) {
         [self.mixpanel identify:payload.userId];
@@ -100,13 +96,11 @@
     }
 }
 
-- (void)track:(SEGTrackPayload *)payload
-{
+- (void)track:(SEGTrackPayload *)payload {
     [self realTrack:payload.event properties:payload.properties];
 }
 
-- (void)screen:(SEGScreenPayload *)payload
-{
+- (void)screen:(SEGScreenPayload *)payload {
     if ([(NSNumber *)[self.settings objectForKey:@"consolidatedPageCalls"] boolValue]) {
         NSMutableDictionary *payloadProps = [NSMutableDictionary dictionaryWithDictionary:payload.properties];
         NSString *event = [[NSString alloc] initWithFormat:@"Loaded a Screen"];
@@ -117,7 +111,7 @@
         SEGLog(@"[[Mixpanel sharedInstance] track:'Loaded a Screen' properties:%@]", payloadProps);
         return;
     }
-    
+
     if ([(NSNumber *)[self.settings objectForKey:@"trackAllPages"] boolValue]) {
         NSString *event = [[NSString alloc] initWithFormat:@"Viewed %@ Screen", payload.name];
         [self realTrack:event properties:payload.properties];
@@ -141,27 +135,25 @@
 }
 
 
-- (void) group:(SEGGroupPayload *)payload {
-    
+- (void)group:(SEGGroupPayload *)payload {
+
     NSString *groupID = payload.groupId;
     NSDictionary *traits = [payload traits];
     NSString *groupName = traits[@"name"];
-    
-    if(groupName == nil || groupName.length == 0) {
+
+    if (groupName == nil || groupName.length == 0) {
         groupName = @"[Segment] Group";
     }
-    
-    if(traits != nil || traits.count != 0){
-        [[self.mixpanel getGroup:groupName groupID: groupID] setOnce:traits];
+
+    if (traits != nil || traits.count != 0) {
+        [[self.mixpanel getGroup:groupName groupID:groupID] setOnce:traits];
     }
-    
+
     [self.mixpanel setGroup:groupName groupID:groupID];
     SEGLog(@"[Mixpanel setGroup:%@ groupID:%@]", groupName, groupID);
-    
 }
 
-+ (NSNumber *)extractRevenue:(NSDictionary *)dictionary withKey:(NSString *)revenueKey
-{
++ (NSNumber *)extractRevenue:(NSDictionary *)dictionary withKey:(NSString *)revenueKey {
     id revenueProperty = nil;
 
     for (NSString *key in dictionary.allKeys) {
@@ -184,8 +176,7 @@
     return nil;
 }
 
-- (void)realTrack:(NSString *)event properties:(NSDictionary *)properties
-{
+- (void)realTrack:(NSString *)event properties:(NSDictionary *)properties {
     // Track the raw event.
     [self.mixpanel track:event properties:properties];
 
@@ -193,9 +184,9 @@
     if (![self peopleEnabled]) {
         return;
     }
-    
+
     // Increment properties that are listed in the Mixpanel integration settings
-    [self incrementProperties:properties];    
+    [self incrementProperties:properties];
 
     // Extract the revenue from the properties passed in to us.
     NSNumber *revenue = [SEGMixpanelIntegration extractRevenue:properties withKey:@"revenue"];
@@ -218,8 +209,7 @@
     }
 }
 
-- (void)alias:(SEGAliasPayload *)payload
-{
+- (void)alias:(SEGAliasPayload *)payload {
     // Instead of using our own anonymousId, we use Mixpanel's own generated Id.
     NSString *distinctId = [self.mixpanel distinctId];
     [self.mixpanel createAlias:payload.theNewId forDistinctID:distinctId];
@@ -228,15 +218,13 @@
 
 // Invoked when the device is registered with a push token.
 // Mixpanel uses this to send push messages to the device, so forward it to Mixpanel.
-- (void)registeredForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
+- (void)registeredForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [[self.mixpanel people] addPushDeviceToken:deviceToken];
     SEGLog(@"[[[[Mixpanel sharedInstance] people] addPushDeviceToken:%@]", deviceToken);
 }
 
 // An internal utility method that checks the settings to see if this event should be incremented in Mixpanel.
-- (BOOL)eventShouldIncrement:(NSString *)event
-{
+- (BOOL)eventShouldIncrement:(NSString *)event {
     NSArray *increments = [self.settings objectForKey:@"eventIncrements"];
     for (NSString *increment in increments) {
         if ([event caseInsensitiveCompare:increment] == NSOrderedSame) {
@@ -247,8 +235,7 @@
 }
 
 // An internal utility method that checks if properties need to be incremented and performs the increment.
-- (void)incrementProperties:(NSDictionary *)properties
-{
+- (void)incrementProperties:(NSDictionary *)properties {
     NSArray *propIncrements = [self.settings objectForKey:@"propIncrements"];
     for (NSString *propIncrement in propIncrements) {
         for (NSString *property in properties) {
@@ -261,27 +248,23 @@
 }
 
 // Return true the project has the People feature enabled.
-- (BOOL)peopleEnabled
-{
+- (BOOL)peopleEnabled {
     return [(NSNumber *)[self.settings objectForKey:@"people"] boolValue];
 }
 
 // Return true if all traits should be set by default.
-- (BOOL)setAllTraitsByDefault
-{
+- (BOOL)setAllTraitsByDefault {
     return [(NSNumber *)[self.settings objectForKey:@"setAllTraitsByDefault"] boolValue];
 }
 
-- (void)reset
-{
+- (void)reset {
     [self flush];
 
     [self.mixpanel reset];
     SEGLog(@"[[Mixpanel sharedInstance] reset]");
 }
 
-- (void)flush
-{
+- (void)flush {
     [self.mixpanel flush];
     SEGLog(@"[[Mixpanel sharedInstance] flush]");
 }
