@@ -6,17 +6,15 @@ echo "$(tput setaf 4)Checking if gem 'Bundler' exists"
 which -s bundler
     
 if [[ $? != 0 ]] ; then
-  echo "$(tput setaf 3) Installing 'Bundler'..."
-
-  sudo gem install bundler
-  bundle init
+    echo "$(tput setaf 3) Installing 'Bundler'..."
+    sudo gem install bundler
+    bundle init
 fi
 
 echo "$(tput setaf 3)Bundler installed...Installing/updating required gems"
 bundle install
 
 echo "$(tput setaf 4)Checking if 'oclint' exists.."
-
 # Install oclint 
 which -s brew
 if [[ $? != 0 ]] ; then
@@ -30,12 +28,10 @@ else
     
     if [[ $? != 0 ]] ; then
 
-   	# Install oclint using homebrew
-	
-	echo "$(tput setaf 3)Installing OClint"
-
-    	brew tap oclint/formulae
- 	brew install oclint
+	    # Install oclint using homebrew
+	    echo "$(tput setaf 3)Installing OClint"
+        brew tap oclint/formulae
+ 	    brew install oclint
     else
         echo "$(tput setaf 3)Updating OClint..."
         brew upgrade oclint
