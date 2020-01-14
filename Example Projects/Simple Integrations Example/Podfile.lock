@@ -65,6 +65,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.4.0):
     - GoogleUtilities/Logger
+  - Mixpanel (3.5.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -82,12 +83,16 @@ PODS:
     - Analytics (~> 3.2)
     - Firebase/Core (~> 6.2)
     - FirebaseAnalytics (~> 6.1)
+  - Segment-Mixpanel (1.5.0):
+    - Analytics (~> 3.0)
+    - Mixpanel (~> 3.5)
   - Specta (1.0.7)
 
 DEPENDENCIES:
   - Expecta
   - Segment-Facebook-App-Events (from `../../Integrations/analytics-ios-integration-facebook-app-events`)
   - Segment-Firebase (from `../../Integrations/analytics-ios-integration-Firebase`)
+  - Segment-Mixpanel (from `../../Integrations/analytics-ios-integration-mixpanel`)
   - Specta
 
 SPEC REPOS:
@@ -105,6 +110,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - Mixpanel
     - nanopb
     - Specta
 
@@ -113,6 +119,8 @@ EXTERNAL SOURCES:
     :path: "../../Integrations/analytics-ios-integration-facebook-app-events"
   Segment-Firebase:
     :path: "../../Integrations/analytics-ios-integration-Firebase"
+  Segment-Mixpanel:
+    :path: "../../Integrations/analytics-ios-integration-mixpanel"
 
 SPEC CHECKSUMS:
   Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
@@ -128,11 +136,13 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
   GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  Mixpanel: 399997670f5452de026449f9e9ecd52eccbb9ff7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Segment-Facebook-App-Events: fc089c58a163dbfb817a8a65b2e5023afd919843
   Segment-Firebase: aa9d6e1481431a4a5e173c71ef620c0db8c723b2
+  Segment-Mixpanel: 2cba240ce309198b1af509df3f0defa7d545d770
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: f33c6540d4bf09bb37e14d7dfdbfe9c910098a61
+PODFILE CHECKSUM: 0882cf879ae9caae01e2ac0d41b0bce736942679
 
 COCOAPODS: 1.8.4

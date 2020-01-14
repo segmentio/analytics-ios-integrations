@@ -10,6 +10,7 @@
 #import <Analytics/SEGAnalytics.h>
 #import <SEGFacebookAppEventsIntegrationFactory.h>
 #import <SEGFirebaseIntegrationFactory.h>
+#import <SEGMixpanelIntegrationFactory.h>
 
 @interface AppDelegate ()
 
@@ -30,8 +31,10 @@
     config.flushAt = 1;                                    // Flush events to Segment every 1 event
     
     // Add any of your bundled integrations.
+
     [config use:[SEGFacebookAppEventsIntegrationFactory instance]]; //Use Facebook
     [config use:[SEGFirebaseIntegrationFactory instance]]; // Use Firebase
+    [config use:[SEGMixpanelIntegrationFactory instance]]; // Use Mixpanel
     
     [SEGAnalytics setupWithConfiguration:config];
     
