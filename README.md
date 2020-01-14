@@ -6,6 +6,7 @@ Monorepo storing Segment's analytics iOS integrations. You can find additional d
 To run monorepo or migrate a destination, the following are required:
 
 Xcode 8+
+Xcode command line tools and default must be set under "Locations" in Xcode preferences. (If multiple versions of Xcode are installed on a machine, an occur may occur, and so correct default version must be correctly selected)
 
 And local dependencies:
 
@@ -15,7 +16,7 @@ And local dependencies:
 4- OCLint
 5- Clang-format
 
-Alternatively, run .check.sh to install any missing ones.
+Alternatively, run .check.sh to install any missing local dependencies.
 
 ```bash
 $ ./check.sh
