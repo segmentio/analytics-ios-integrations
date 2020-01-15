@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+@import Analytics;
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [SEGAnalytics debug:YES];
+    SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"r8FnwUKyDLLhL7bTZhOw86YpWhQXNVuP"];
+  
+    configuration.trackApplicationLifecycleEvents = YES; // Enable this to record certain application events automatically!
+    configuration.recordScreenViews = YES; // Enable this to record screen views automatically!
+    configuration.flushAt = 1;                                    // Flush events to Segment every 1 event
+    [SEGAnalytics setupWithConfiguration:configuration];
     return YES;
 }
 
