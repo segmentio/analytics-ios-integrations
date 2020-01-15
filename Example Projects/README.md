@@ -7,6 +7,13 @@ There are 3 examples in this folder.
 One project that lists all the types of events collected by Segment.
 And two projects identical to each other that are in Objective C and Swift to get started easily with Segment analytics.
 
+Note: To view events, log into your segment dashboard and view the live events in the debugger.
+
+https://app.segment.com/xxxx/sources/ios/debugger
+xxxx- is your Segment account ID.
+
+Also, debugging must be enabled. Check step 1 in below section "Configuring Analytics".
+
 ###
 
 ## Configuring Analytics
@@ -23,6 +30,9 @@ configuration.recordScreenViews = YES; // Enable this to record screen views aut
 configuration.flushAt = 1;                                    // Flush events to Segment every 1 event
 [SEGAnalytics setupWithConfiguration:configuration]; 
 ```
+
+To allow debugging, add the following also in your AppDelegate:
+ ```[SEGAnalytics debug:YES];```
 
 #### 2- Sending First Track Call
 
@@ -61,6 +71,10 @@ pod 'Segment-Facebook-App-Events'
 
 ## Adding a Middleware
 
+Middleware act as intermediate layer before events are delivered to each of the integrations enabled in the Segment dashboard. Hence, allowing more control, and modification and editing of events.
+
+To setup middleware: 
+
 After having completed step "Configuring Analytics" above, do the following in your AppDelegate
 
 1- Config Middleware
@@ -71,35 +85,32 @@ enforceEventTaxonomy,
 customizeAllTrackCalls,
 sampleEventsToMixpanel,
 blockScreenCallsToAmplitude,
+blockEvents
 ]
 ```
-where each of these middleware are block functions
+where each of can be as many middleware as you wish, and are type ```SEGBlockMiddleware``` .
 
-2- E.g for function, customizeAllTrackCalls, logic is as follows:
+2- E.g if you wish to allow only certain events to be passed and , logic is as follows:
 
-```swift
-let customizeAllTrackCalls = SEGBlockMiddleware { (context, next) in
-if context.eventType == .track {
-next(context.modify { ctx in
-guard let track = ctx.payload as? SEGTrackPayload else {
-return
+
+```objc
+//Setup Middleware
+SEGBlockMiddleware *middlewareCheckEvents = [[SEGBlockMiddleware alloc] initWithBlock:^(SEGContext * _Nonnull context, SEGMiddlewareNext  _Nonnull next) {
+if (context.eventType == SEGEventTypeTrack) {
+NSArray *validEvents = @[@"Home", @"SendEvents"];
+SEGTrackPayload *track = (SEGTrackPayload *)context.payload;
+if (![validEvents containsObject:track.event]){
+NSLog(@"Dropping Rogue Event %@", track.event);
+return;
 }
-let newEvent = "[New] \(track.event)"
-var newProps = track.properties ?? [:]
-newProps["customAttribute"] = "Hello"
-ctx.payload = SEGTrackPayload(
-event: newEvent,
-properties: newProps,
-context: track.context,
-integrations: track.integrations
-)
-})
-} else {
-next(context)
+[next context];
 }
-}
+}];
+
+// Add middleware to Analytics configuration
+[configuration setMiddlewares:@[middlewareCheckEvents]];
 ```
-More information can be found [here](https://segment.com/docs/connections/sources/catalog/libraries/mobile/ios/#examples) 
+More information and examples can be found here [here](https://segment.com/docs/connections/sources/catalog/libraries/mobile/ios/#examples) 
 
 ## Submitting a PR
 
