@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SendEventsViewController : UIViewController
 
+@property NSInteger eventNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,9 +6,15 @@
 //  Copyright © 2020 Segment. All rights reserved.
 //
 
+@import Analytics;
 #import "HomeViewController.h"
+#import "SendEventsViewController.h"
+
 
 @interface HomeViewController ()
+
+@property (weak, nonatomic) IBOutlet UISwitch *trackLifecycleSwitch;
+@property (weak, nonatomic) IBOutlet UITextView *specsDocumentationTextView;
 
 @end
 
@@ -16,17 +22,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"Specs Documentation"
+                                                                           attributes:@{ NSLinkAttributeName: [NSURL URLWithString:@"https://segment.com/docs/connections/spec/"] }];
+    self.specsDocumentationTextView.attributedText = attributedString;
+   
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)sendEvent:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SendEventsViewController *eventsViewController = [storyboard instantiateViewControllerWithIdentifier:@"SendEventsViewController"];
+    eventsViewController.eventNumber = [sender tag];
+    [self.navigationController pushViewController:eventsViewController animated:true];
 }
-*/
+
+- (IBAction)trackLifeCycleEvents:(UISwitch *)sender {
+    [SEGAnalytics sharedAnalytics].configuration.trackApplicationLifecycleEvents = sender.selected;
+}
 
 @end
