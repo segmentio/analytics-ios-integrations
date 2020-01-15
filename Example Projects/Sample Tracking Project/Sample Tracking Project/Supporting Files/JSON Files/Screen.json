@@ -1,0 +1,14 @@
+{
+    "messageId": "test-message-xk3es",
+    "timestamp": "2020-01-15T05:30:18.352Z",
+    "type": "screen",
+    "email": "ash@gmail.com",
+    "projectId": "l3SolE5TC4",
+    "properties": {
+        "property1": 1,
+        "property2": "test",
+        "property3": true
+    },
+    "userId": "test-user-nxi8w7c",
+    "name": "Home View"
+}

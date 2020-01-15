@@ -1,0 +1,13 @@
+{
+    "messageId": "test-message-6jmfp",
+    "timestamp": "2020-01-15T05:29:32.945Z",
+    "type": "identify",
+    "email": "ash@gmail.com",
+    "projectId": "l3SolE5TC4",
+    "traits": {
+        "planID": 1,
+        "planName": "Pro Example",
+        "planType": "Premium"
+    },
+    "userId": "test-user-qtzjde"
+}

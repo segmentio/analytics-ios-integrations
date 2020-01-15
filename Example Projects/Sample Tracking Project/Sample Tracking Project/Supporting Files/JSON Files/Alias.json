@@ -1,0 +1,9 @@
+{
+    "type": "alias",
+    "previoudId": "test-user-pxyrnr",
+    "newId":"test-user2-pxyrnr",
+    "integrations": {
+        "All": false,
+        "Mixpanel": true
+    }
+}

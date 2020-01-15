@@ -1,0 +1,14 @@
+{
+    "messageId": "test-message-4i6k6",
+    "timestamp": "2020-01-15T05:30:31.319Z",
+    "type": "group",
+    "email": "ash@gmail.com",
+    "projectId": "l3SolE5TC4",
+    "traits": {
+        "trait1": 1,
+        "trait2": "test",
+        "trait3": true
+    },
+    "groupId": "test-group-0wcnv",
+    "userId": "test-user-qtzjde"
+}
