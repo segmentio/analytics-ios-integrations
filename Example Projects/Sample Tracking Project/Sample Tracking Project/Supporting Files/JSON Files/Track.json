@@ -1,0 +1,14 @@
+{
+    "messageId": "test-message-ognuqd",
+    "timestamp": "2020-01-15T05:29:52.552Z",
+    "type": "track",
+    "email": "ash@gmail.com",
+    "projectId": "l3SolE5TC4",
+    "properties": {
+        "id": 1,
+        "title": "company",
+        "isIT": true
+    },
+    "userId": "test-user-pxyrnr",
+    "event": "Test Event Name"
+}
