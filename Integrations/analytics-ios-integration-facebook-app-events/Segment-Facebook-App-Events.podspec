@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author           = { "Segment" => "friends@segment.com" }
  
   s.social_media_url = 'https://twitter.com/segment'
-  s.source         = { :git => '' }
+  s.source         = { :git => 'https://github.com/segmentio/analytics-ios-integrations' }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

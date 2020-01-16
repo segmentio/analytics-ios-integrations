@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://segment.com/"
   s.license          =  { :type => 'MIT' }
   s.author           = { "Segment" => "friends@segment.com" }
-  s.source         = { :git => '' }
+  s.source         = { :git => 'https://github.com/segmentio/analytics-ios-integrations' }
   s.social_media_url = 'https://twitter.com/segment'
 
   s.platform     = :ios, '8.0'
