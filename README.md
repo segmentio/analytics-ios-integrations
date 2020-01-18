@@ -16,7 +16,7 @@ And local dependencies:
 4- OCLint
 5- Clang-format
 
-Alternatively, run .check.sh to install any missing local dependencies.
+Alternatively, run .check.sh to install any missing local dependencies. (Please Check usage below)
 
 ```bash
 $ ./check.sh
@@ -49,15 +49,22 @@ We use [clang-format](https://github.com/llvm-mirror/clang/tree/master/tools/cla
 Note: During lint, it includes cleaning project and building source files.
 
 ```bash
-$ ./lint  
+$ ./lint xxxx
+$ ./lint Segment-Firebase
 $ ./format 
 ```
+
+Note: XXXX is Target name. Also during linting, command line will ask for the path of destination eg ```Integrations/analytics-ios-integration-firebase``` or you can add full path.
 
 ### Tests
 We use xcode build tools to run tests. You can run all the tests using:
 ```bash
 $ ./test 
 ```
+
+Note: For tests to compile successfully from command line, code signing for the test targets must be set. And for ./test.sh to run successfully. (It's enough that it's a personal team, Apple ID does not need to have purchased developer program)
+
+![Alt text](/Screenshots/Signing.png?raw=true "Tests Signing")
 
 ### Release
 You can release using:
@@ -70,7 +77,6 @@ For releasing production versions, please check our Segment's internal documenta
 ## Migrating Destinations to the Monorepo
 
 You can find more information on migrating a destination [here](./guides/MIGRATING.md).
-
 
 ## Semantic Versioning
 
