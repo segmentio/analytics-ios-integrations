@@ -559,6 +559,15 @@ describe(@"Firebase Integration", ^{
                                                                       @"search_term" : @"blue hotpants"
                                                                       }];
     });
+  
+    it(@"track screen with name", ^{
+        SEGScreenPayload *payload = [[SEGScreenPayload alloc] initWithName:@"Home screen"
+                                                                properties:@{}
+                                                                   context:@{}
+                                                              integrations:@{}];
+        [integration screen:payload];
+        [verify(mockFirebase) setScreenName:@"Home screen" screenClass:nil];
+    });
     
 });
 
