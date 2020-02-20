@@ -3,11 +3,11 @@
 //  Pods
 //
 
-#import <Foundation/Foundation.h>
 #import <Analytics/SEGIntegration.h>
+#import <Foundation/Foundation.h>
 
 
-@interface SEGFirebaseIntegration : NSObject <SEGIntegration>
+@interface SEGFirebaseIntegration : NSObject<SEGIntegration>
 
 @property (nonatomic, strong) NSDictionary *settings;
 @property (nonatomic, strong) Class firebaseClass;

@@ -1,8 +1,8 @@
-#import <Foundation/Foundation.h>
 #import <Analytics/SEGIntegrationFactory.h>
+#import <Foundation/Foundation.h>
 
 
-@interface SEGFirebaseIntegrationFactory : NSObject <SEGIntegrationFactory>
+@interface SEGFirebaseIntegrationFactory : NSObject<SEGIntegrationFactory>
 
 + (instancetype)instance;
 

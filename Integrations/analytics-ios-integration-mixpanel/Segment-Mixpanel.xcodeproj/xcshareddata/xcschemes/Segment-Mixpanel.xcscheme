@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E072C55D2386105D00F90DC6"
-               BuildableName = "Segment_Facebook.framework"
-               BlueprintName = "Segment-Facebook"
-               ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+               BlueprintIdentifier = "E050C83423BAB74A0001A31A"
+               BuildableName = "Segment_Mixpanel.framework"
+               BlueprintName = "Segment-Mixpanel"
+               ReferencedContainer = "container:Segment-MixPanel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E072C5662386105D00F90DC6"
-               BuildableName = "Segment-FacebookTests.xctest"
-               BlueprintName = "Segment-FacebookTests"
-               ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+               BlueprintIdentifier = "E050C83D23BAB74A0001A31A"
+               BuildableName = "Segment-MixpanelTests.xctest"
+               BlueprintName = "Segment-MixpanelTests"
+               ReferencedContainer = "container:Segment-MixPanel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E072C55D2386105D00F90DC6"
-            BuildableName = "Segment_Facebook.framework"
-            BlueprintName = "Segment-Facebook"
-            ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+            BlueprintIdentifier = "E050C83423BAB74A0001A31A"
+            BuildableName = "Segment_Mixpanel.framework"
+            BlueprintName = "Segment-Mixpanel"
+            ReferencedContainer = "container:Segment-MixPanel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E072C55D2386105D00F90DC6"
-            BuildableName = "Segment_Facebook.framework"
-            BlueprintName = "Segment-Facebook"
-            ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+            BlueprintIdentifier = "E050C83423BAB74A0001A31A"
+            BuildableName = "Segment_Mixpanel.framework"
+            BlueprintName = "Segment-Mixpanel"
+            ReferencedContainer = "container:Segment-MixPanel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,10 +82,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E072C55D2386105D00F90DC6"
-            BuildableName = "Segment_Facebook.framework"
-            BlueprintName = "Segment-Facebook"
-            ReferencedContainer = "container:Segment-Facebook.xcodeproj">
+            BlueprintIdentifier = "E050C83423BAB74A0001A31A"
+            BuildableName = "Segment_Mixpanel.framework"
+            BlueprintName = "Segment-Mixpanel"
+            ReferencedContainer = "container:Segment-MixPanel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
